@@ -1,0 +1,8 @@
+.build/
+.idea/
+.publish/
+node_modules/
+npm-debug.log
+yarn-error.log
+coverage/
+test-results.xml
