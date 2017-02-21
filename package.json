@@ -56,5 +56,8 @@
   },
   "bin": {
     "install-presets": "./bin/install.js"
+  },
+  "publishConfig": {
+    "registry": "http://mvn/artifactory/api/npm/npm-local"
   }
 }
