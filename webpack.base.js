@@ -2,10 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 
-const babelConfigPath = path.resolve(__dirname, './.babelrc');
-const babelConfig = JSON.parse(fs.readFileSync(babelConfigPath, 'utf8'));
-const postcssConfigPath = path.resolve(__dirname, './postcss.config.js');
-
 const ASSETS_BASE_QUERY = {
     name: '[name].[hash].[ext]',
     limit: 10000
@@ -27,11 +23,11 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
-                query: babelConfig
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader?sourceMap!postcss-loader?config=' + postcssConfigPath,
+                loader: 'style-loader!css-loader?sourceMap!postcss-loader',
             },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,

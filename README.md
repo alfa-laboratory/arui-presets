@@ -19,13 +19,35 @@ yarn add arui-presets --dev
 Использование линтеров
 ----------------------
 
-При установке пакета в папку вашего проекта автоматически скопируются файлы `stylelint.config.js`, `.eslintrc`,
-`.editorconfig`. В зависимостях этого проекта уже имеются stylelint и eslint с нужными наборами плагинов, поэтому
+При установке пакета в папку вашего проекта автоматически скопируются файлы:
+
+- `stylelint.config.js` - Конфигурация для линтера css фалов
+- `.eslintrc` - Конфигурация для линтера js файлов
+- `.editorconfig` - Конфигурация для многих редакторов (размер табуляции, стиль переносов и т.п.)
+
+В зависимостях этого проекта уже имеются stylelint и eslint с нужными наборами плагинов, поэтому
 для использования валидации достаточно добавить в "scripts" вашего package.json
 ```
 "lint-css": "stylelint ./src/**/*.css",
 "lint-js": "eslint ./src/ --ext .js,.jsx",
 "lint": "npm run lint-css && npm run lint-js",
+```
+
+Конфигурация компиляторов
+-------------------------
+
+Так же при установке будут автоматически скопированы следующие файлы
+
+- `.babelrc` - Конфигурация babel
+- `postcss.config.js` - Конфигурация postcss
+- `mq.json` - Конфигурация для плагина postcss-custom-media
+
+В случае, если в корне проекта уже присутствуют эти файлы - они будут оставлены без изменения.
+Если вы хотите чтобы эти файлы автоматически обновлялись при установке - добавьте такой скрипт в ваш `package.json`
+
+```
+"install-presets": "install-presets -c .babelrc -c postcss.config.js -c mq.json --force",
+"post-install": "npm run install-presets",
 ```
 
 Использование настроек webpack
@@ -52,12 +74,3 @@ module.exports = merge.smart(
     process.env.NODE_ENV === 'production' ? ARUI_PROD_TEMPLATE : ARUI_DEV_TEMPLATE
 );
 ```
-
-Назначение других файлов
-------------------------
-
-- `.babelrc` - Конфигурация babel
-- `postcss.config.js` - Конфигурация postcss
-- `mq.json` - Конфигурация для плагина postcss-custom-media
-
-Все они используются из `webpack.base.js`
