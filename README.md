@@ -47,7 +47,7 @@ yarn add arui-presets --dev
 
 ```
 "install-presets": "install-presets -c .babelrc -c postcss.config.js -c mq.json --force",
-"post-install": "npm run install-presets",
+"postinstall": "npm run install-presets",
 ```
 
 Использование настроек webpack
