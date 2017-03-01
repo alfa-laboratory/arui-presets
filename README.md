@@ -30,9 +30,19 @@ module.exports = {
 };
 ```
 
+#### stylelint
+Вы можете унаследовать конфигурацию вашего stylelint от `arui-presets/stylelint`.
+
+
+Файл `stylelint.config.js` вашего проекта:
+```js
+module.exports = {
+    extends: 'arui-presets/stylelint'
+};
+```
+
 При установке пакета в папку вашего проекта автоматически скопируются файлы:
 
-- `stylelint.config.js` - Конфигурация для линтера css фалов
 - `.editorconfig` - Конфигурация для многих редакторов (размер табуляции, стиль переносов и т.п.)
 
 В зависимостях этого проекта уже имеются stylelint и eslint с нужными наборами плагинов, поэтому
