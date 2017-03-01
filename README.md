@@ -36,9 +36,20 @@ yarn add arui-presets --dev
 Конфигурация компиляторов
 -------------------------
 
+#### babel
+Вы можете использовать preset `arui-presets/babel`.
+
+
+Файл `.babelrc` вашего проекта:
+```json
+{
+  "presets": ["arui-presets/babel"]
+}
+```
+
+
 Так же при установке будут автоматически скопированы следующие файлы
 
-- `.babelrc` - Конфигурация babel
 - `postcss.config.js` - Конфигурация postcss
 - `mq.json` - Конфигурация для плагина postcss-custom-media
 
