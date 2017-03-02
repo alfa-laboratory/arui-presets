@@ -41,10 +41,6 @@ module.exports = {
 };
 ```
 
-При установке пакета в папку вашего проекта автоматически скопируются файлы:
-
-- `.editorconfig` - Конфигурация для многих редакторов (размер табуляции, стиль переносов и т.п.)
-
 В зависимостях этого проекта уже имеются stylelint и eslint с нужными наборами плагинов, поэтому
 для использования валидации достаточно добавить в "scripts" вашего package.json
 ```
@@ -68,17 +64,14 @@ module.exports = {
 ```
 
 
-Так же при установке будут автоматически скопированы следующие файлы
+#### postcss
+Конфигурация для postcss требует настроек плагина postcss-custom-media. Взять их можно в `arui-feather/mq`.
 
-- `postcss.config.js` - Конфигурация postcss
-- `mq.json` - Конфигурация для плагина postcss-custom-media
-
-В случае, если в корне проекта уже присутствуют эти файлы - они будут оставлены без изменения.
-Если вы хотите чтобы эти файлы автоматически обновлялись при установке - добавьте такой скрипт в ваш `package.json`
-
-```
-"install-presets": "install-presets -c .babelrc -c postcss.config.js -c mq.json --force",
-"postinstall": "npm run install-presets",
+Файл postcss.config.js вашего проекта:
+```js
+const mq = require('arui-feather/mq/mq.json');
+const aruiConfig = require('arui-presets/postcss');
+module.exports = aruiConfig(mq);
 ```
 
 Использование настроек webpack
