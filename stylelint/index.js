@@ -54,7 +54,6 @@ module.exports = {
         ],
         'declaration-bang-space-after': 'never',
         'declaration-bang-space-before': 'always',
-        'declaration-block-no-ignored-properties': true,
         'declaration-block-no-shorthand-property-overrides': true,
         'declaration-block-semicolon-newline-after': 'always-multi-line',
         'declaration-block-semicolon-space-after': 'always-single-line',
@@ -80,7 +79,6 @@ module.exports = {
         'media-feature-colon-space-after': 'always',
         'media-feature-colon-space-before': 'never',
         'media-feature-name-case': 'lower',
-        'media-feature-no-missing-punctuation': true,
         'media-feature-parentheses-space-inside': 'never',
         'media-feature-range-operator-space-after': 'always',
         'media-feature-range-operator-space-before': 'always',
@@ -94,20 +92,12 @@ module.exports = {
         'no-missing-end-of-source-newline': true,
         'number-no-trailing-zeros': true,
         'property-case': 'lower',
-        'rule-nested-empty-line-before': [
+        'rule-empty-line-before': [
             'always-multi-line',
             {
                 except: [
                     'first-nested'
                 ],
-                ignore: [
-                    'after-comment'
-                ]
-            }
-        ],
-        'rule-non-nested-empty-line-before': [
-            'always-multi-line',
-            {
                 ignore: [
                     'after-comment'
                 ]
