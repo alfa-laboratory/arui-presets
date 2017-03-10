@@ -8,7 +8,7 @@
   "dependencies": {
     "autoprefixer": "^6.3.1",
     "babel-core": "^6.4.5",
-    "babel-eslint": "^6.0.3",
+    "babel-eslint": "^7.1.1",
     "babel-loader": "^6.3.2",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-react-constant-elements": "^6.9.1",
@@ -20,12 +20,14 @@
     "command-line-args": "^4.0.1",
     "compression-webpack-plugin": "^0.3.1",
     "css-loader": "^0.26.2",
-    "eslint": "^2.8.0",
-    "eslint-config-airbnb": "^7.0.0",
-    "eslint-plugin-import": "^1.5.0",
+    "eslint": "^3.16.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-chai-friendly": "^0.2.0",
+    "eslint-plugin-class-methods-use-this-regexp": "^0.0.2",
+    "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsdoc": "^2.4.0",
-    "eslint-plugin-jsx-a11y": "0.x",
-    "eslint-plugin-react": "^4.0.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.10.1",
     "find-parent-dir": "^0.3.0",
@@ -42,7 +44,7 @@
     "postcss-nested": "^1.0.0",
     "postcss-url": "^5.1.1",
     "style-loader": "^0.13.2",
-    "stylelint": "^7.1.0",
+    "stylelint": "^7.8.0",
     "url-loader": "^0.5.8",
     "webpack": "^1.12.12",
     "webpack-config": "^7.0.0",
@@ -50,16 +52,11 @@
     "webpack-postcss-tools": "^1.1.1"
   },
   "scripts": {
-    "install-optional": "node ./bin/install -c .babelrc -c postcss.config.js -c mq.json",
-    "install-required": "node ./bin/install -c .editorconfig -c .eslintrc -c stylelint.config.js -f",
     "release-patch": "npm version patch -m 'chore(*): patch version'",
     "release-minor": "npm version minor -m 'chore(*): minor version'",
     "release-major": "npm version major -m 'chore(*): major version'",
     "version": "git fetch --tags",
     "postversion": "git push origin master && git push --tags && npm publish"
-  },
-  "bin": {
-    "install-presets": "./bin/install.js"
   },
   "publishConfig": {
     "registry": "http://mvn/artifactory/api/npm/npm-local"
