@@ -17,7 +17,7 @@ function getConfig(mq) {
             require('autoprefixer')({
                 browsers: [
                     'last 2 versions',
-                    'ie >= 9',
+                    'ie >= 10',
                     'android >= 4',
                     'ios >= 8'
                 ]
