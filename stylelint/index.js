@@ -63,7 +63,6 @@ module.exports = {
         'declaration-colon-newline-after': 'always-multi-line',
         'declaration-colon-space-after': 'always-single-line',
         'declaration-colon-space-before': 'never',
-        'func-names': 0,
         'function-calc-no-unspaced-operator': true,
         'function-comma-newline-after': 'always-multi-line',
         'function-comma-space-after': 'always-single-line',

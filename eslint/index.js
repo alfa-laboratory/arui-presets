@@ -48,6 +48,7 @@ module.exports = {
         'comma-dangle': [2, 'never'],
         'default-case': 0,
         'indent': [2, 4, { 'SwitchCase': 1 }],
+        'func-names': 0,
         'jsdoc/newline-after-description': 2,
         'jsx-quotes': [2, 'prefer-single'],
         'max-len': [2, 120, 4, { 'ignoreComments': true }],
