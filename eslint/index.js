@@ -25,7 +25,8 @@ module.exports = {
     plugins: [
         'chai-friendly',
         'class-methods-use-this-regexp',
-        'jsdoc'
+        'jsdoc',
+        'sort-class-members'
     ],
     rules: {
         'class-methods-use-this': 0,
@@ -63,7 +64,50 @@ module.exports = {
         'react/jsx-filename-extension': [2, { 'extensions': ['.jsx'] }],
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
+        'react/no-unused-prop-types': 0,
         'react/prefer-stateless-function': 0,
+        'react/require-default-props': 0,
+        'react/sort-comp': 0,
+        'sort-class-members/sort-class-members': [2, {
+            'order': [
+                '[static-properties]',
+                '[static-methods]',
+                '[static-stuff]',
+                '[properties]',
+                '[lifecycle]',
+                '[rendering]',
+                '[handling]',
+                '[everything-else]'
+            ],
+            'groups': {
+                'static-stuff': [
+                    { 'type': 'property', 'static': true, 'name': 'propTypes' },
+                    { 'type': 'property', 'static': true, 'name': 'defaultProps' },
+                    { 'type': 'property', 'static': true, 'name': 'contextTypes' },
+                    { 'type': 'property', 'static': true, 'name': 'childContextTypes' },
+                    { 'type': 'property', 'static': false, 'name': 'state' }
+                ],
+                'lifecycle': [
+                    { 'type': 'method', 'static': false, 'name': 'constructor' },
+                    { 'type': 'method', 'static': false, 'name': 'getChildContext' },
+                    { 'type': 'method', 'static': false, 'name': 'componentWillMount' },
+                    { 'type': 'method', 'static': false, 'name': 'componentDidMount' },
+                    { 'type': 'method', 'static': false, 'name': 'componentWillReceiveProps' },
+                    { 'type': 'method', 'static': false, 'name': 'shouldComponentUpdate' },
+                    { 'type': 'method', 'static': false, 'name': 'componentWillUpdate' },
+                    { 'type': 'method', 'static': false, 'name': 'componentDidUpdate' },
+                    { 'type': 'method', 'static': false, 'name': 'componentWillUnmount' }
+                ],
+                'rendering': [
+                    { 'type': 'method', 'static': false, 'name': 'render' },
+                    { 'type': 'method', 'static': false, 'name': '/^render.+$/' }
+                ],
+                'handling': [
+                    { 'type': 'method', 'static': false, 'name': '/^handle.+$/' }
+                ]
+            },
+            'accessorPairPositioning': 'getThenSet'
+        }],
         'valid-jsdoc': [2, {
             'matchDescription': '(.+\\.)|^$',
             'prefer': { 'return': 'returns' },
