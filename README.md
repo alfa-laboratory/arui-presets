@@ -91,7 +91,7 @@ const ARUI_PROD_TEMPLATE = require('arui-presets/webpack.production');
 const merge = require('webpack-merge');
 
 module.exports = merge.smart(
-    { entry: 'src/index.js },
+    { entry: 'src/index.js' },
     ARUI_TEMPLATE,
     process.env.NODE_ENV === 'production' ? ARUI_PROD_TEMPLATE : ARUI_DEV_TEMPLATE
 );
