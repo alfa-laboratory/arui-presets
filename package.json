@@ -2,9 +2,8 @@
   "name": "arui-presets",
   "version": "2.0.0",
   "description": "Config files for arui-apps",
-  "repository": "ssh://git@git/ef/arui-presets.git",
   "author": "Good guys from Alfa Laboratory",
-  "license": "LicenseRef-LICENSE",
+  "license": "MIT",
   "dependencies": {
     "autoprefixer": "^6.3.1",
     "babel-core": "^6.4.5",
@@ -59,7 +58,11 @@
     "version": "git fetch --tags",
     "postversion": "git push origin master && git push --tags && npm publish"
   },
-  "publishConfig": {
-    "registry": "http://mvn/artifactory/api/npm/npm-local"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfa-laboratory/arui-presets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alfa-laboratory/arui-presets/issues"
   }
 }
