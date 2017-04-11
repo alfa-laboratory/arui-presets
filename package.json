@@ -43,7 +43,7 @@
     "postcss-mixins": "^4.0.0",
     "postcss-nested": "^1.0.0",
     "postcss-url": "^5.1.1",
-    "style-loader": "^0.13.2",
+    "style-loader": "^0.16.1",
     "stylelint": "^7.8.0",
     "url-loader": "^0.5.8",
     "webpack": "^1.12.12",
