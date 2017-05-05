@@ -97,6 +97,22 @@ module.exports = merge.smart(
 );
 ```
 
+Использование в typescript проектах
+-----------------------------------
+
+#### Конфигурация tslint
+Вы можете унаследовать конфигурацию вашего tslint от `arui-presets/tslint`.
+```json
+{
+    "extends": "arui-presets/tslint"
+}
+```
+
+Использование в package.json вашего проекта
+```
+"lint-ts": "tslint -c tslint.json --project ./tsconfig.json --type-check src/**/*.ts"
+```
+
 Лицензия
 --------
 
