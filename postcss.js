@@ -12,6 +12,7 @@ function getConfig(mq) {
                 extensions: mq
             }),
             require('postcss-custom-properties')(),
+            require('postcss-strip-units')(),
             require('postcss-calc')(),
             require('postcss-nested')(),
             require('autoprefixer')({
