@@ -14,6 +14,7 @@ function getConfig(mq) {
             require('postcss-custom-properties')(),
             require('postcss-strip-units')(),
             require('postcss-calc')(),
+            require('postcss-color-function')(),
             require('postcss-nested')(),
             require('autoprefixer')({
                 browsers: [
