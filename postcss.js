@@ -1,7 +1,11 @@
 function getConfig(mq) {
     return {
         plugins: [
-            require('postcss-import')(),
+            require('postcss-import')({
+                plugins: [
+                    require('postcss-discard-comments')()
+                ]
+            }),
             require('postcss-url')({
                 url: 'rebase'
             }),
