@@ -3,10 +3,13 @@ module.exports = {
         extensions: ['.ts', '.tsx'],
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.tsx?$/,
-                loader: 'babel-loader!ts-loader',
+                use: [
+                    'babel-loader',
+                    'ts-loader'
+                ]
             }
         ]
     }

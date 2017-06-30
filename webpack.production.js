@@ -4,10 +4,13 @@ const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader'),
+                loader: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: 'css-loader!postcss-loader'
+                }),
             }
         ]
     },

@@ -1,12 +1,15 @@
 const config = {
-    presets: [
-        require.resolve('babel-preset-react'),
-        [require.resolve('babel-preset-es2015'), { modules: false }],
-        require.resolve('babel-preset-stage-0')
-    ],
     plugins: [
+        require.resolve('babel-plugin-transform-react-jsx'),
+        require.resolve('babel-plugin-syntax-jsx'),
+        require.resolve('babel-plugin-transform-react-display-name'),
         require.resolve('babel-plugin-transform-decorators-legacy'),
-        [require.resolve('babel-plugin-transform-runtime'), { polyfill: false, helpers: false }]
+
+        require.resolve('babel-plugin-transform-es2015-literals'),
+        require.resolve('babel-plugin-transform-es2015-duplicate-keys')
+    ],
+    presets: [
+        require.resolve('babel-preset-stage-0')
     ]
 };
 
@@ -18,4 +21,3 @@ if (process.env.NODE_ENV === 'production') {
     );
 }
 
-module.exports = config;
