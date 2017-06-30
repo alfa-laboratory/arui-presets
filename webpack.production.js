@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
     module: {
@@ -15,6 +16,16 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'vendor',
+            minChunks: function (module) {
+                return module.userRequest
+                    && module.userRequest.indexOf('node_modules') !== -1
+                    && module.userRequest.indexOf('arui') === -1;
+            },
+        }),
+        new ManifestPlugin(),
+        new webpack.optimize.ModuleConcatenationPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             beautify: false,
             sourceMap: false,
