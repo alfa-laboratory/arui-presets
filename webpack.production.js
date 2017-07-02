@@ -20,8 +20,8 @@ module.exports = {
             name: 'vendor',
             minChunks: function (module) {
                 return module.userRequest
-                    && module.userRequest.indexOf('node_modules') !== -1
-                    && module.userRequest.indexOf('arui') === -1;
+                    && (module.userRequest.indexOf('arui') === -1 || module.userRequest.indexOf('polyfills') !== -1)
+                    && module.userRequest.indexOf('node_modules') !== -1;
             },
         }),
         new ManifestPlugin(),
