@@ -1,0 +1,18 @@
+:root {
+    --red: #f00;
+}
+
+.super-style {
+    display: flex;
+
+    &__name {
+        color: var(--red);
+        width: calc(100px + 20px);
+    }
+
+    @media (--small-only) {
+        & + & {
+            margin-top: 40px;
+        }
+    }
+}

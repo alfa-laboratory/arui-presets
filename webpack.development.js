@@ -8,7 +8,7 @@ module.exports = {
     devtool: 'inline-eval-source-map',
     plugins: [
         new CaseSensitivePathsPlugin(),
-        new WatchMissingNodeModulesPlugin(path.join(process.cwd(), 'node_modules'),),
+        new WatchMissingNodeModulesPlugin(path.join(process.cwd(), 'node_modules')),
         new webpack.NamedModulesPlugin()
     ]
 };

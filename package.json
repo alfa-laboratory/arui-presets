@@ -5,7 +5,7 @@
   "author": "Good guys from Alfa Laboratory",
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "^7.1.1",
+    "autoprefixer": "^7.1.2",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.1",
@@ -23,10 +23,10 @@
     "compression-webpack-plugin": "^0.4.0",
     "css-loader": "^0.28.4",
     "eslint": "^4.1.1",
-    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-airbnb": "^15.0.2",
     "eslint-plugin-chai-friendly": "^0.3.6",
     "eslint-plugin-class-methods-use-this-regexp": "^0.0.2",
-    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsdoc": "^3.1.1",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.1.0",
@@ -34,7 +34,7 @@
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
     "find-parent-dir": "^0.3.0",
-    "postcss": "^6.0.3",
+    "postcss": "^6.0.6",
     "postcss-calc": "^6.0.0",
     "postcss-color-function": "^4.0.0",
     "postcss-custom-media": "^6.0.0",
@@ -51,21 +51,50 @@
     "react-dev-utils": "^3.0.2",
     "style-loader": "^0.18.2",
     "stylelint": "^7.12.0",
-    "tslint": "^5.4.3",
-    "tslint-config-airbnb": "^5.1.2",
+    "tslint-config-airbnb": "^5.2.1",
     "url-loader": "^0.5.9",
-    "webpack": "^3.0.0",
+    "webpack": "^3.1.0",
     "webpack-config": "^7.0.0",
-    "webpack-dev-server": "^2.5.0",
-    "webpack-manifest-plugin": "^1.1.0",
+    "webpack-dev-server": "^2.5.1",
+    "webpack-manifest-plugin": "^1.1.1",
     "webpack-postcss-tools": "^1.1.1"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.1",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.1"
   },
   "scripts": {
     "release-patch": "npm version patch -m 'chore(*): patch version'",
     "release-minor": "npm version minor -m 'chore(*): minor version'",
     "release-major": "npm version major -m 'chore(*): major version'",
     "version": "git fetch --tags",
-    "postversion": "git push origin master && git push --tags && npm publish"
+    "postversion": "git push origin master && git push --tags && npm publish",
+    "lint": "eslint ./",
+    "precommit": "lint-staged",
+    "check:eslint": "eslint ./test/js-input.jsx",
+    "check:babel": "node ./test/babel-test.js",
+    "check:postcss": "node ./test/postcss-test.js",
+    "check:tslint": "tslint -c ./tslint.js -t verbose --project ./tsconfig.json --type-check ./test/ts-input.tsx",
+    "check:stylelint": "node ./test/stylelint-test.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ],
+    "{babel,babel-node}.js": [
+      "check:babel"
+    ],
+    "{tslint.js,tsconfig.json}": [
+      "check:tslint"
+    ],
+    "postcss.js": [
+      "check:postcss"
+    ],
+    "stylelint/*.js": [
+      "check:stylelint"
+    ]
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,4 @@
+/* eslint global-require: 0 */
 function getConfig(mq) {
     return {
         plugins: [

@@ -1,4 +1,3 @@
-const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -10,9 +9,9 @@ const ASSETS_BASE_QUERY = {
 module.exports = {
     resolve: {
         modules: [
-            path.join(process.cwd(), 'node_modules'),
+            path.join(process.cwd(), 'node_modules')
         ],
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx']
     },
     module: {
         rules: [
@@ -41,7 +40,7 @@ module.exports = {
             },
             {
                 test: /\.(eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: 'file-loader',
+                loader: 'file-loader'
             },
             {
                 test: /\.(jpe?g)$/i,
@@ -63,11 +62,11 @@ module.exports = {
                 loader: 'url-loader',
                 options: Object.assign({ mimetype: 'image/svg+xml' }, ASSETS_BASE_QUERY)
             }
-        ],
+        ]
     },
     plugins: [
         new webpack.ProvidePlugin({
-            React: 'react',
+            React: 'react'
         }),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
