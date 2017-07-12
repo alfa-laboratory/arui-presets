@@ -2,6 +2,7 @@
 function getConfig(mq) {
     return {
         plugins: [
+            require('postcss-omit-import-tilde')(),
             require('postcss-import')({
                 plugins: [
                     require('postcss-discard-comments')()

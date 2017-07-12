@@ -4504,6 +4504,12 @@ postcss-normalize-url@^3.0.7:
     postcss "^5.0.14"
     postcss-value-parser "^3.2.3"
 
+postcss-omit-import-tilde@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-omit-import-tilde/-/postcss-omit-import-tilde-1.0.1.tgz#e0ec97f7de733ba5ae31199f5cbb6c443c612ecc"
+  dependencies:
+    postcss "^5.0.21"
+
 postcss-ordered-values@^2.1.0:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/postcss-ordered-values/-/postcss-ordered-values-2.2.3.tgz#eec6c2a67b6c412a8db2042e77fe8da43f95c11d"
