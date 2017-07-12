@@ -1,4 +1,3 @@
-const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -9,17 +8,13 @@ const ASSETS_BASE_QUERY = {
 
 module.exports = {
     resolve: {
-        root: [
-            path.join(__dirname, 'node_modules'),
+        modules: [
+            path.join(process.cwd(), 'node_modules')
         ],
-        extensions: ['', '.js', '.jsx'],
+        extensions: ['.js', '.jsx']
     },
     module: {
-        loaders: [
-            {
-                test: /\.json?$/,
-                loader: 'json-loader',
-            },
+        rules: [
             {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
@@ -27,47 +22,55 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader?sourceMap!postcss-loader',
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'postcss-loader'
+                ]
             },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: 'url-loader',
-                query: Object.assign({ mimetype: 'application/font-woff' }, ASSETS_BASE_QUERY)
+                options: Object.assign({ mimetype: 'application/font-woff' }, ASSETS_BASE_QUERY)
             },
             {
                 test: /\.(ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: 'url-loader',
-                query: Object.assign({ mimetype: 'application/octet-stream' }, ASSETS_BASE_QUERY)
+                options: Object.assign({ mimetype: 'application/octet-stream' }, ASSETS_BASE_QUERY)
             },
             {
                 test: /\.(eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: 'file-loader',
+                loader: 'file-loader'
             },
             {
                 test: /\.(jpe?g)$/i,
                 loader: 'url-loader',
-                query: Object.assign({ mimetype: 'image/jpeg' }, ASSETS_BASE_QUERY)
+                options: Object.assign({ mimetype: 'image/jpeg' }, ASSETS_BASE_QUERY)
             },
             {
                 test: /\.(png)$/i,
                 loader: 'url-loader',
-                query: Object.assign({ mimetype: 'image/png' }, ASSETS_BASE_QUERY)
+                options: Object.assign({ mimetype: 'image/png' }, ASSETS_BASE_QUERY)
             },
             {
                 test: /\.(gif)$/i,
                 loader: 'url-loader',
-                query: Object.assign({ mimetype: 'image/gif' }, ASSETS_BASE_QUERY)
+                options: Object.assign({ mimetype: 'image/gif' }, ASSETS_BASE_QUERY)
             },
             {
                 test: /\.(svg)$/i,
                 loader: 'url-loader',
-                query: Object.assign({ mimetype: 'image/svg+xml' }, ASSETS_BASE_QUERY)
+                options: Object.assign({ mimetype: 'image/svg+xml' }, ASSETS_BASE_QUERY)
             }
-        ],
+        ]
     },
     plugins: [
         new webpack.ProvidePlugin({
-            React: 'react',
+            React: 'react'
+        }),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+            'process.HOT_LOADER': process.env.HOT_LOADER
         })
     ]
 };

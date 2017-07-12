@@ -1,12 +1,15 @@
 module.exports = {
     resolve: {
-        extensions: ['.ts', '.tsx'],
+        extensions: ['.ts', '.tsx']
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.tsx?$/,
-                loader: 'babel-loader!ts-loader',
+                use: [
+                    'babel-loader',
+                    'ts-loader'
+                ]
             }
         ]
     }
