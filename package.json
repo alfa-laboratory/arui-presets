@@ -45,7 +45,7 @@
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.6",
     "postcss-mixins": "^6.0.1",
-    "postcss-nested": "^2.0.2",
+    "postcss-nested": "2.0.2",
     "postcss-omit-import-tilde": "^1.0.1",
     "postcss-strip-units": "^1.2.0",
     "postcss-url": "^7.0.0",
