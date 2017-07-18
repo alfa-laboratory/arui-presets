@@ -71,6 +71,7 @@ module.exports = {
         'react/sort-comp': 0,
         'jsx-a11y/href-no-hash': 'off',
         'jsx-a11y/anchor-is-valid': ['warn', { aspects: ['invalidHref'] }],
+        'jsx-a11y/label-has-for': ['error', { components: ['label'], allowChildren: true }],
         'sort-class-members/sort-class-members': [2, {
             order: [
                 '[static-properties]',
