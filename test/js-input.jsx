@@ -9,6 +9,12 @@ class AnswersGiver {
 }
 
 const giver = new AnswersGiver();
+definedAfterUsage();
 
 console.log(giver.getAnswer()); // eslint-disable-line no-console
 console.log(babelCore.version); // eslint-disable-line no-console
+
+function definedAfterUsage() {
+    console.log('Because it is normal!'); // eslint-disable-line no-console
+}
+

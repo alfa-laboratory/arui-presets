@@ -118,6 +118,7 @@ module.exports = {
             preferType: { boolean: 'Boolean', number: 'Number', object: 'Object', string: 'String' },
             requireReturn: false,
             requireReturnDescription: false
-        }]
+        }],
+        'no-use-before-define': ['error', { functions: false }]
     }
 };
