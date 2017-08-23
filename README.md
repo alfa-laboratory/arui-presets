@@ -1,7 +1,14 @@
 Alfa Laboratory UI presets
 ==========================
 
-Набор конфигурационных файлов для компиляции и валидации проектов, основаных на arui-feather.
+[![NPM version][npm-img]][npm]
+
+[npm-img]:         https://img.shields.io/npm/v/arui-presets.svg
+[npm]:             https://www.npmjs.org/package/arui-presets
+
+<br />
+
+Набор конфигурационных файлов для компиляции и валидации проектов, основанных на [arui-feather](https://github.com/alfa-laboratory/arui-feather).
 
 Установка
 ---------
@@ -9,7 +16,7 @@ Alfa Laboratory UI presets
 npm install arui-presets --save-dev
 ```
 
-Или, если вы используете yarn
+Или, если вы используете yarn:
 ```
 yarn add arui-presets --dev
 ```
@@ -81,14 +88,14 @@ module.exports = aruiConfig(mq);
 Использование настроек webpack
 ------------------------------
 
-В пакете так же содержится файлы с конфигурацией webpack.
+В пакете также содержатся файлы с конфигурацией webpack.
 
 - `webpack.base.js` - общий шаблон для webpack
 - `webpack.development.js` - настройки для разработческой среды
 - `webpack.production.js` - настройки для боевой среды
 - `webpack.typescript.js` - настройки для использования typescript в проекте
 
-Лучший способ использовать их - объеденять их пакетом [webpack-merge](https://github.com/survivejs/webpack-merge)
+Лучший способ использовать их — объединять их пакетом [webpack-merge](https://github.com/survivejs/webpack-merge)
 
 ```js
 const ARUI_TEMPLATE = require('arui-presets/webpack.base');
