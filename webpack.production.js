@@ -3,15 +3,24 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
+const extractMainCSS = new ExtractTextPlugin('[name].[hash].css');
+const extractIconsCSS = new ExtractTextPlugin('[name]-icons.[hash].css');
+const extractOptions = {
+    fallback: 'style-loader',
+    use: ['css-loader', 'postcss-loader']
+};
+
 module.exports = {
     module: {
         rules: [
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: 'css-loader!postcss-loader'
-                })
+                exclude: /icon.*\.css$/,
+                use: extractMainCSS.extract(extractOptions)
+            },
+            {
+                test: /icon.*\.css$/,
+                use: extractIconsCSS.extract(extractOptions)
             }
         ]
     },
@@ -31,7 +40,8 @@ module.exports = {
             sourceMap: false,
             warnings: false
         }),
-        new ExtractTextPlugin('[name].[hash].css'),
+        extractMainCSS,
+        extractIconsCSS,
         new CompressionPlugin({
             asset: '[file].gz',
             algorithm: 'gzip',

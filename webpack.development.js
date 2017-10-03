@@ -6,6 +6,18 @@ const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeM
 
 module.exports = {
     devtool: 'inline-eval-source-map',
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'postcss-loader'
+                ]
+            }
+        ]
+    },
     plugins: [
         new CaseSensitivePathsPlugin(),
         new WatchMissingNodeModulesPlugin(path.join(process.cwd(), 'node_modules')),
