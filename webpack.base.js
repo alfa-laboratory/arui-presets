@@ -1,13 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 
-const FILE_LOADER_QUERY = {
+const QUERY = {
     name: '[name].[hash].[ext]'
-};
-
-const URL_LOADER_QUERY = {
-    name: '[name].[hash].[ext]',
-    limit: 10000
 };
 
 module.exports = {
@@ -26,13 +21,13 @@ module.exports = {
             },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: 'url-loader',
-                options: Object.assign({ mimetype: 'application/font-woff' }, URL_LOADER_QUERY)
+                loader: 'file-loader',
+                options: Object.assign({ mimetype: 'application/font-woff' }, QUERY)
             },
             {
                 test: /\.(ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                loader: 'url-loader',
-                options: Object.assign({ mimetype: 'application/octet-stream' }, URL_LOADER_QUERY)
+                loader: 'file-loader',
+                options: Object.assign({ mimetype: 'application/octet-stream' }, QUERY)
             },
             {
                 test: /\.(eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -40,23 +35,23 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g)$/i,
-                loader: 'url-loader',
-                options: Object.assign({ mimetype: 'image/jpeg' }, URL_LOADER_QUERY)
+                loader: 'file-loader',
+                options: Object.assign({ mimetype: 'image/jpeg' }, QUERY)
             },
             {
                 test: /\.(gif)$/i,
-                loader: 'url-loader',
-                options: Object.assign({ mimetype: 'image/gif' }, URL_LOADER_QUERY)
+                loader: 'file-loader',
+                options: Object.assign({ mimetype: 'image/gif' }, QUERY)
             },
             {
                 test: /\.(png)$/i,
                 loader: 'file-loader',
-                options: Object.assign({ mimetype: 'image/png' }, FILE_LOADER_QUERY)
+                options: Object.assign({ mimetype: 'image/png' }, QUERY)
             },
             {
                 test: /\.(svg)$/i,
                 loader: 'file-loader',
-                options: Object.assign({ mimetype: 'image/svg+xml' }, FILE_LOADER_QUERY)
+                options: Object.assign({ mimetype: 'image/svg+xml' }, QUERY)
             }
         ]
     },
