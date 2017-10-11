@@ -68,13 +68,6 @@ module.exports = {
 }
 ```
 
-Для компиляции кода для nodejs 6+
-```json
-{
-  "presets": ["arui-presets/babel-node"]
-}
-```
-
 #### postcss
 Конфигурация для postcss требует настроек плагина postcss-custom-media. Взять их можно в `arui-feather/mq`.
 
