@@ -23,12 +23,7 @@ function getConfig(mq) {
             require('postcss-color-function')(),
             require('postcss-nested')(),
             require('autoprefixer')({
-                browsers: [
-                    'last 2 versions',
-                    'ie >= 10',
-                    'android >= 4',
-                    'ios >= 8'
-                ]
+                browsers: require('./supporting-browsers')
             })
         ]
     };

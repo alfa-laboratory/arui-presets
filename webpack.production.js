@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const extractMainCSS = new ExtractTextPlugin('[name].[hash].css');
 const extractIconsCSS = new ExtractTextPlugin('[name]-icons.[hash].css');
@@ -42,10 +43,11 @@ module.exports = {
         }),
         extractMainCSS,
         extractIconsCSS,
+        new OptimizeCssAssetsPlugin(),
         new CompressionPlugin({
             asset: '[file].gz',
             algorithm: 'gzip',
-            regExp: /\.js$|\.css$|\.ttf$|\.svg$/,
+            regExp: /\.js$|\.css$|\.png$|\.svg$/,
             threshold: 10240,
             minRatio: 0.8
         })
