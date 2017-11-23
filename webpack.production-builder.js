@@ -6,8 +6,8 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 function webpackProductionConfigBuilder(options) {
     options = options || {};
-    const extractMainCSS = new ExtractTextPlugin('[name].[hash].css');
-    const extractIconsCSS = new ExtractTextPlugin('[name]-icons.[hash].css');
+    const extractMainCSS = new ExtractTextPlugin(options.extractMainCSS || '[name].[hash].css');
+    const extractIconsCSS = new ExtractTextPlugin(options.extractIconsCSS || '[name]-icons.[hash].css');
     const extractOptions = Object.assign({
         fallback: 'style-loader',
         use: ['css-loader', 'postcss-loader']
