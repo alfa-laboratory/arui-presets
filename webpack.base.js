@@ -60,7 +60,6 @@ module.exports = {
             React: 'react'
         }),
         new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
             'process.HOT_LOADER': process.env.HOT_LOADER
         })
     ]
