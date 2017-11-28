@@ -1,10 +1,22 @@
-Alfa Laboratory UI presets
+Alfa Laboratory UI Presets
 ==========================
 
-[![NPM version][npm-img]][npm]
+[![npm][npm-img]][npm]
+[![license][license-img]][license]
+[![travis][travis-img]][travis]
+[![appveyor][appveyor-img]][appveyor]
+[![greenkeeper][greenkeeper-img]][greenkeeper]
 
+[appveyor]:        https://ci.appveyor.com/project/teryaew/arui-presets
+[appveyor-img]:    https://img.shields.io/appveyor/ci/teryaew/arui-presets/master.svg?label=win
+[greenkeeper]:     https://greenkeeper.io
+[greenkeeper-img]: https://badges.greenkeeper.io/alfa-laboratory/arui-presets.svg
+[license]:         https://opensource.org/licenses/MIT
+[license-img]:     https://img.shields.io/badge/License-MIT-brightgreen.svg
 [npm-img]:         https://img.shields.io/npm/v/arui-presets.svg
 [npm]:             https://www.npmjs.org/package/arui-presets
+[travis]:          https://travis-ci.org/alfa-laboratory/arui-presets?branch=master
+[travis-img]:      https://img.shields.io/travis/alfa-laboratory/arui-presets/master.svg?label=unix
 
 <br />
 
