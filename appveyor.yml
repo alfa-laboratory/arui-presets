@@ -1,0 +1,29 @@
+image: Visual Studio 2017
+
+environment:
+  matrix:
+    - nodejs_version: stable
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm i
+
+test_script:
+  - node --version
+  - npm run lint
+  - npm run test
+
+build: off
+
+cache:
+  - node_modules
+
+matrix:
+  fast_finish: true
+
+platform:
+  - x64
+
+skip_commits:
+  files:
+    - '*.md'
