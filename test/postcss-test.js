@@ -11,4 +11,5 @@ const mqConfig = {
 
 postcss(postcssConfig(mqConfig))
     .process(cssFile)
+    // eslint-disable-next-line no-console
     .then(result => console.log(result.css));

@@ -68,6 +68,7 @@
   "devDependencies": {
     "husky": "0.14.3",
     "lint-staged": "4.0.1",
+    "npm-run-all": "4.1.2",
     "tslint": "5.5.0",
     "typescript": "2.4.1"
   },
@@ -79,27 +80,28 @@
     "postversion": "git push origin master && git push --tags && npm publish",
     "lint": "eslint ./",
     "precommit": "lint-staged",
-    "check:eslint": "eslint ./test/js-input.jsx",
-    "check:babel": "node ./test/babel-test.js",
-    "check:postcss": "node ./test/postcss-test.js",
-    "check:tslint": "tslint -c ./tslint.js -t verbose --project ./tsconfig.json --type-check ./test/ts-input.tsx",
-    "check:stylelint": "node ./test/stylelint-test.js"
+    "test": "npm-run-all -pr test:babel test:eslint test:postcss test:stylelint test:tslint",
+    "test:babel": "node ./test/babel-test.js",
+    "test:eslint": "eslint ./test/js-input.jsx",
+    "test:postcss": "node ./test/postcss-test.js",
+    "test:stylelint": "node ./test/stylelint-test.js",
+    "test:tslint": "tslint -c ./tslint.js -t verbose --project ./tsconfig.json --type-check ./test/ts-input.tsx"
   },
   "lint-staged": {
     "*.js": [
       "eslint"
     ],
     "{babel,babel-node}.js": [
-      "check:babel"
+      "test:babel"
     ],
     "{tslint.js,tsconfig.json}": [
-      "check:tslint"
+      "test:tslint"
     ],
     "postcss.js": [
-      "check:postcss"
+      "test:postcss"
     ],
     "stylelint/*.js": [
-      "check:stylelint"
+      "test:stylelint"
     ]
   },
   "repository": {
