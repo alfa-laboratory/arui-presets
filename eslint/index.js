@@ -115,7 +115,9 @@ module.exports = {
         'valid-jsdoc': [2, {
             matchDescription: '(.+\\.)|^$',
             prefer: { return: 'returns' },
-            preferType: { boolean: 'Boolean', number: 'Number', object: 'Object', string: 'String' },
+            preferType: {
+                boolean: 'Boolean', number: 'Number', object: 'Object', string: 'String'
+            },
             requireReturn: false,
             requireReturnDescription: false
         }],
