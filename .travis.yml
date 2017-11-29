@@ -23,3 +23,4 @@ script:
 
 after_script:
   - greenkeeper-lockfile-upload
+  - if [ -n "${TRAVIS_TAG}" ]; then npm run github-release; fi

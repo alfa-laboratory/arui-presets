@@ -66,6 +66,8 @@
     "webpack-postcss-tools": "1.1.2"
   },
   "devDependencies": {
+    "conventional-changelog-cli": "1.3.5",
+    "conventional-github-releaser": "2.0.0",
     "husky": "0.14.3",
     "lint-staged": "5.0.0",
     "npm-run-all": "4.1.2",
@@ -73,19 +75,21 @@
     "typescript": "2.6.2"
   },
   "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "github-release": "conventional-github-releaser -p angular",
+    "lint": "eslint ./",
+    "postversion": "git push origin master && git push --tags && npm publish",
+    "precommit": "lint-staged",
     "release-patch": "npm version patch -m 'chore(*): patch version'",
     "release-minor": "npm version minor -m 'chore(*): minor version'",
     "release-major": "npm version major -m 'chore(*): major version'",
-    "version": "git fetch --tags",
-    "postversion": "git push origin master && git push --tags && npm publish",
-    "lint": "eslint ./",
-    "precommit": "lint-staged",
     "test": "npm-run-all -pr test:babel test:eslint test:postcss test:stylelint test:tslint",
     "test:babel": "node ./test/babel-test.js",
     "test:eslint": "eslint ./test/js-input.jsx",
     "test:postcss": "node ./test/postcss-test.js",
     "test:stylelint": "node ./test/stylelint-test.js",
-    "test:tslint": "tslint -c ./tslint.js -t verbose --project ./tsconfig.json --type-check ./test/ts-input.tsx"
+    "test:tslint": "tslint -c ./tslint.js -t verbose --project ./tsconfig.json --type-check ./test/ts-input.tsx",
+    "version": "git fetch --tags && npm run changelog && git add CHANGELOG.md"
   },
   "lint-staged": {
     "*.js": [
