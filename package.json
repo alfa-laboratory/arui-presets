@@ -52,7 +52,7 @@
     "postcss-mixins": "6.2.0",
     "postcss-nested": "2.1.2",
     "postcss-omit-import-tilde": "1.0.1",
-    "postcss-strip-units": "1.2.0",
+    "postcss-strip-units": "2.0.1",
     "postcss-url": "7.3.0",
     "react-dev-utils": "4.2.1",
     "style-loader": "0.19.0",
