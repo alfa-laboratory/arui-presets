@@ -36,6 +36,18 @@ yarn add arui-presets --dev
 Использование линтеров
 ----------------------
 
+#### commitlint
+Вы можете унаследовать конфигурацию вашего commitlint от `arui-presets/commitlint`.
+
+
+Файл `commitlint.config.js` вашего проекта:
+```js
+module.exports = {
+    extends: ['arui-presets/commitlint']
+};
+```
+
+
 #### eslint
 Вы можете унаследовать конфигурацию вашего eslint от `arui-presets/eslint`.
 
