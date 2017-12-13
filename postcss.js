@@ -1,9 +1,10 @@
 /* eslint global-require: 0 */
-function getConfig(mq) {
+function getConfig(mq, path = []) {
     return {
         plugins: [
             require('postcss-omit-import-tilde')(),
             require('postcss-import')({
+                path,
                 plugins: [
                     require('postcss-discard-comments')()
                 ]
