@@ -1,3 +1,34 @@
+<a name="4.7.2"></a>
+## [4.7.2](https://github.com/alfa-laboratory/arui-presets/compare/v4.7.1...v4.7.2) (2017-12-25)
+
+
+### Bug Fixes
+
+* **package:** update [@commitlint](https://github.com/commitlint)/cli to version 5.2.6 ([#61](https://github.com/alfa-laboratory/arui-presets/issues/61)) ([9025888](https://github.com/alfa-laboratory/arui-presets/commit/9025888))
+* **package:** update babel-eslint to version 8.1.0 ([#64](https://github.com/alfa-laboratory/arui-presets/issues/64)) ([aa91be0](https://github.com/alfa-laboratory/arui-presets/commit/aa91be0))
+* **package:** update babel-plugin-transform-react-remove-prop-types to version 0.4.11 ([#60](https://github.com/alfa-laboratory/arui-presets/issues/60)) ([c9245f6](https://github.com/alfa-laboratory/arui-presets/commit/c9245f6))
+* **package:** update compression-webpack-plugin to version 1.1.3 ([#62](https://github.com/alfa-laboratory/arui-presets/issues/62)) ([fa31e36](https://github.com/alfa-laboratory/arui-presets/commit/fa31e36))
+* **package:** update eslint to version 4.14.0 ([#63](https://github.com/alfa-laboratory/arui-presets/issues/63)) ([ef7b71e](https://github.com/alfa-laboratory/arui-presets/commit/ef7b71e))
+* **package:** update eslint-plugin-jsdoc to version 3.3.0 ([#58](https://github.com/alfa-laboratory/arui-presets/issues/58)) ([bdfbfce](https://github.com/alfa-laboratory/arui-presets/commit/bdfbfce))
+* **package:** update file-loader to version 1.1.6 ([#59](https://github.com/alfa-laboratory/arui-presets/issues/59)) ([212286a](https://github.com/alfa-laboratory/arui-presets/commit/212286a))
+
+
+
+<a name="4.7.1"></a>
+## [4.7.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.7.0...v4.7.1) (2017-12-15)
+
+
+### Bug Fixes
+
+* **package:** update autoprefixer to version 7.2.3 ([#52](https://github.com/alfa-laboratory/arui-presets/issues/52)) ([1c55e09](https://github.com/alfa-laboratory/arui-presets/commit/1c55e09))
+* **package:** update compression-webpack-plugin to version 1.1.0 ([#53](https://github.com/alfa-laboratory/arui-presets/issues/53)) ([ab258e4](https://github.com/alfa-laboratory/arui-presets/commit/ab258e4))
+* **package:** update compression-webpack-plugin to version 1.1.2 ([#57](https://github.com/alfa-laboratory/arui-presets/issues/57)) ([eac34ce](https://github.com/alfa-laboratory/arui-presets/commit/eac34ce)), closes [#55](https://github.com/alfa-laboratory/arui-presets/issues/55)
+* **package:** update eslint-plugin-jsx-a11y to version 6.0.3 ([#51](https://github.com/alfa-laboratory/arui-presets/issues/51)) ([0a1e977](https://github.com/alfa-laboratory/arui-presets/commit/0a1e977))
+* **package:** update style-loader to version 0.19.1 ([#54](https://github.com/alfa-laboratory/arui-presets/issues/54)) ([3c34fe2](https://github.com/alfa-laboratory/arui-presets/commit/3c34fe2))
+* **package:** update stylelint to version 8.4.0 ([#56](https://github.com/alfa-laboratory/arui-presets/issues/56)) ([6261b05](https://github.com/alfa-laboratory/arui-presets/commit/6261b05))
+
+
+
 <a name="4.7.0"></a>
 # [4.7.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.6.0...v4.7.0) (2017-12-13)
 
