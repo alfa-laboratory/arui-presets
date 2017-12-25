@@ -1,3 +1,13 @@
+<a name="4.8.1"></a>
+## [4.8.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.8.0...v4.8.1) (2017-12-25)
+
+
+### Bug Fixes
+
+* **package:** update babel-eslint to 8.1.1 ([#66](https://github.com/alfa-laboratory/arui-presets/issues/66)) ([fa53049](https://github.com/alfa-laboratory/arui-presets/commit/fa53049))
+
+
+
 <a name="4.8.0"></a>
 # [4.8.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.7.2...v4.8.0) (2017-12-25)
 
