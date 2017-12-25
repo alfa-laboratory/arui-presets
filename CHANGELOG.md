@@ -1,3 +1,13 @@
+<a name="4.8.0"></a>
+# [4.8.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.7.2...v4.8.0) (2017-12-25)
+
+
+### Features
+
+* **babel:** allow to pass options to env presets ([#27](https://github.com/alfa-laboratory/arui-presets/issues/27)) ([072f6fa](https://github.com/alfa-laboratory/arui-presets/commit/072f6fa))
+
+
+
 <a name="4.7.2"></a>
 ## [4.7.2](https://github.com/alfa-laboratory/arui-presets/compare/v4.7.1...v4.7.2) (2017-12-25)
 
