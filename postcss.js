@@ -25,7 +25,8 @@ function getConfig(mq, path = []) {
             require('postcss-nested')(),
             require('autoprefixer')({
                 browsers: require('./supporting-browsers')
-            })
+            }),
+            require('postcss-inherit')
         ]
     };
 }
