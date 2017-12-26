@@ -1,3 +1,18 @@
+<a name="4.9.0"></a>
+# [4.9.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.8.1...v4.9.0) (2017-12-26)
+
+
+### Bug Fixes
+
+* **package:** update babel-eslint to version 8.1.2 ([#68](https://github.com/alfa-laboratory/arui-presets/issues/68)) ([16f60e4](https://github.com/alfa-laboratory/arui-presets/commit/16f60e4))
+
+
+### Features
+
+* **eslint:** disable function-paren-newline rule ([#67](https://github.com/alfa-laboratory/arui-presets/issues/67)) ([2715d50](https://github.com/alfa-laboratory/arui-presets/commit/2715d50))
+
+
+
 <a name="4.8.1"></a>
 ## [4.8.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.8.0...v4.8.1) (2017-12-25)
 
