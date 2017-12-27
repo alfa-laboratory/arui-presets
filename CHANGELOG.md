@@ -1,3 +1,13 @@
+<a name="4.10.0"></a>
+# [4.10.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.9.0...v4.10.0) (2017-12-27)
+
+
+### Features
+
+* add post css inherit plugin ([092c89a](https://github.com/alfa-laboratory/arui-presets/commit/092c89a))
+
+
+
 <a name="4.9.0"></a>
 # [4.9.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.8.1...v4.9.0) (2017-12-26)
 
