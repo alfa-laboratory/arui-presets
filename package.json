@@ -50,6 +50,7 @@
     "postcss-each": "0.10.0",
     "postcss-for": "2.1.1",
     "postcss-import": "11.0.0",
+    "postcss-inherit": "^4.0.3",
     "postcss-loader": "2.0.9",
     "postcss-mixins": "6.2.0",
     "postcss-nested": "3.0.0",
