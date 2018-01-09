@@ -92,6 +92,16 @@ module.exports = {
 }
 ```
 
+Настройки основаны на [babel-presets-env](https://babeljs.io/docs/plugins/preset-env/) с добавлением плагинов для 
+поддержки декораторов и нескольких оптимизаций для react.
+
+Вы можете передать любые настройки, поддерживаемые `babel-presets-env`.
+Если вы хотите получить более адекватную для последних версий node версии компиляцию
+(например не компилировать `async/await`) вам необходимо определить env переменную `BABEL_TARGET=node`.
+Без этой env переменной сборка будет происходить в расчете на [поддерживаемые arui-feather](https://github.com/alfa-laboratory/arui-feather#%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D0%B5-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D1%8B)
+версии браузеров.  
+
+
 #### postcss
 Конфигурация для postcss требует настроек плагина postcss-custom-media. Взять их можно в `arui-feather/mq`.
 
