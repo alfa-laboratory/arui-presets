@@ -1,9 +1,14 @@
 /* eslint global-require: 0 */
+
+const defaultTargetOptions = {};
+if (process.env.BABEL_TARGET === 'node') {
+    defaultTargetOptions.node = 'current';
+} else {
+    defaultTargetOptions.browsers = require('./supporting-browsers');
+}
+
 const defaultOptions = {
-    targets: {
-        browsers: require('./supporting-browsers'),
-        node: 'current'
-    },
+    targets: defaultTargetOptions,
     loose: true
 };
 
