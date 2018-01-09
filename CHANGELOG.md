@@ -1,3 +1,26 @@
+<a name="4.10.1"></a>
+## [4.10.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.10.0...v4.10.1) (2018-01-02)
+
+
+### Bug Fixes
+
+* **package:** update [@commitlint](https://github.com/commitlint)/cli to version 5.2.8 ([#70](https://github.com/alfa-laboratory/arui-presets/issues/70)) ([3750714](https://github.com/alfa-laboratory/arui-presets/commit/3750714))
+* **package:** update autoprefixer to version 7.2.4 ([#74](https://github.com/alfa-laboratory/arui-presets/issues/74)) ([9724188](https://github.com/alfa-laboratory/arui-presets/commit/9724188))
+* **package:** update eslint-plugin-sort-class-members to version 1.3.0 ([#72](https://github.com/alfa-laboratory/arui-presets/issues/72)) ([950a073](https://github.com/alfa-laboratory/arui-presets/commit/950a073))
+* **package:** update postcss to version 6.0.15 ([#73](https://github.com/alfa-laboratory/arui-presets/issues/73)) ([5fcf050](https://github.com/alfa-laboratory/arui-presets/commit/5fcf050))
+
+
+
+<a name="4.10.0"></a>
+# [4.10.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.9.0...v4.10.0) (2017-12-27)
+
+
+### Features
+
+* add post css inherit plugin ([092c89a](https://github.com/alfa-laboratory/arui-presets/commit/092c89a))
+
+
+
 <a name="4.9.0"></a>
 # [4.9.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.8.1...v4.9.0) (2017-12-26)
 
