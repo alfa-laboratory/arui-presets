@@ -1,3 +1,23 @@
+<a name="4.11.0"></a>
+# [4.11.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.10.1...v4.11.0) (2018-01-09)
+
+
+### Bug Fixes
+
+* **package:** update babel-eslint to version 8.2.0 ([#81](https://github.com/alfa-laboratory/arui-presets/issues/81)) ([267d11d](https://github.com/alfa-laboratory/arui-presets/commit/267d11d))
+* **package:** update css-loader to version 0.28.8 ([#76](https://github.com/alfa-laboratory/arui-presets/issues/76)) ([86cc9cb](https://github.com/alfa-laboratory/arui-presets/commit/86cc9cb))
+* **package:** update eslint to version 4.15.0 ([#80](https://github.com/alfa-laboratory/arui-presets/issues/80)) ([63fd574](https://github.com/alfa-laboratory/arui-presets/commit/63fd574))
+* **package:** update eslint-plugin-jsdoc to version 3.3.1 ([#79](https://github.com/alfa-laboratory/arui-presets/issues/79)) ([d65343f](https://github.com/alfa-laboratory/arui-presets/commit/d65343f))
+* **package:** update postcss-loader to version 2.0.10 ([#75](https://github.com/alfa-laboratory/arui-presets/issues/75)) ([5a55a29](https://github.com/alfa-laboratory/arui-presets/commit/5a55a29))
+* **package:** update webpack-dev-server to version 2.10.0 ([#78](https://github.com/alfa-laboratory/arui-presets/issues/78)) ([44dc265](https://github.com/alfa-laboratory/arui-presets/commit/44dc265))
+
+
+### Features
+
+* **babel:** babel-env target node ([6e270fd](https://github.com/alfa-laboratory/arui-presets/commit/6e270fd))
+
+
+
 <a name="4.10.1"></a>
 ## [4.10.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.10.0...v4.10.1) (2018-01-02)
 
