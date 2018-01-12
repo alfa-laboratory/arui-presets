@@ -1,3 +1,16 @@
+<a name="4.11.2"></a>
+## [4.11.2](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.1...v4.11.2) (2018-01-12)
+
+
+### Bug Fixes
+
+* update babel-eslint to 8.2.1 for resolving export default from ([#87](https://github.com/alfa-laboratory/arui-presets/issues/87)) ([330763f](https://github.com/alfa-laboratory/arui-presets/commit/330763f))
+* **package:** update [@commitlint](https://github.com/commitlint)/cli to version 6.0.2 ([#86](https://github.com/alfa-laboratory/arui-presets/issues/86)) ([d4f4853](https://github.com/alfa-laboratory/arui-presets/commit/d4f4853))
+* **package:** update [@commitlint](https://github.com/commitlint)/config-conventional to version 6.0.2 ([#85](https://github.com/alfa-laboratory/arui-presets/issues/85)) ([83a7e12](https://github.com/alfa-laboratory/arui-presets/commit/83a7e12))
+* **package:** update autoprefixer to version 7.2.5 ([#88](https://github.com/alfa-laboratory/arui-presets/issues/88)) ([0d40e8b](https://github.com/alfa-laboratory/arui-presets/commit/0d40e8b))
+
+
+
 <a name="4.11.1"></a>
 ## [4.11.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.0...v4.11.1) (2018-01-12)
 
