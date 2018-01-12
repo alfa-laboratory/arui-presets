@@ -1,3 +1,15 @@
+<a name="4.11.1"></a>
+## [4.11.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.0...v4.11.1) (2018-01-12)
+
+
+### Bug Fixes
+
+* **package:** update [@commitlint](https://github.com/commitlint)/cli to version 6.0.0 ([#83](https://github.com/alfa-laboratory/arui-presets/issues/83)) ([bdb0e72](https://github.com/alfa-laboratory/arui-presets/commit/bdb0e72))
+* **package:** update postcss to version 6.0.16 ([#77](https://github.com/alfa-laboratory/arui-presets/issues/77)) ([36645fd](https://github.com/alfa-laboratory/arui-presets/commit/36645fd))
+* **package:** update webpack-dev-server to version 2.10.1 ([#82](https://github.com/alfa-laboratory/arui-presets/issues/82)) ([f598e78](https://github.com/alfa-laboratory/arui-presets/commit/f598e78))
+
+
+
 <a name="4.11.0"></a>
 # [4.11.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.10.1...v4.11.0) (2018-01-09)
 
