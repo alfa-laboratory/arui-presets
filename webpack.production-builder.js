@@ -28,6 +28,9 @@ function webpackProductionConfigBuilder(options) {
             ]
         },
         plugins: [
+            new webpack.ProvidePlugin({
+                React: 'react'
+            }),
             new webpack.optimize.CommonsChunkPlugin({
                 name: 'vendor',
                 minChunks(module) {
