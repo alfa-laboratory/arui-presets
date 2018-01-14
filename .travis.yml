@@ -3,12 +3,10 @@ dist: trusty
 language: node_js
 
 node_js:
-  - "7.4.0"
-
-matrix:
-  fast_finish: true
+  - "8.9.1"
 
 before_install:
+  - npm install -g npm@5
   - npm -g i greenkeeper-lockfile@1
 
 install:
