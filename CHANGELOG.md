@@ -1,3 +1,13 @@
+<a name="4.11.3"></a>
+## [4.11.3](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.2...v4.11.3) (2018-01-14)
+
+
+### Bug Fixes
+
+* **package:** update webpack-dev-server to version 2.11.0 ([#90](https://github.com/alfa-laboratory/arui-presets/issues/90)) ([5661365](https://github.com/alfa-laboratory/arui-presets/commit/5661365))
+
+
+
 <a name="4.11.2"></a>
 ## [4.11.2](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.1...v4.11.2) (2018-01-12)
 
