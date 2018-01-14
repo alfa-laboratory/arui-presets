@@ -6,8 +6,8 @@ node_js:
   - "8.9.1"
 
 before_install:
-  - npm install -g npm@5
-  - npm -g i greenkeeper-lockfile@1
+  - npm i -g npm@5
+  - npm i -g greenkeeper-lockfile@1
 
 install:
   - npm i
