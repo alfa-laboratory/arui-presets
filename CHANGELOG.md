@@ -1,3 +1,23 @@
+<a name="4.11.4"></a>
+## [4.11.4](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.3...v4.11.4) (2018-02-12)
+
+
+### Bug Fixes
+
+* **package:** update babel-plugin-transform-react-remove-prop-types to version 0.4.13 ([#107](https://github.com/alfa-laboratory/arui-presets/issues/107)) ([f8082dd](https://github.com/alfa-laboratory/arui-presets/commit/f8082dd))
+* **package:** update command-line-args to version 5.0.0 ([#93](https://github.com/alfa-laboratory/arui-presets/issues/93)) ([942a0ed](https://github.com/alfa-laboratory/arui-presets/commit/942a0ed))
+* **package:** update command-line-args to version 5.0.2 ([#111](https://github.com/alfa-laboratory/arui-presets/issues/111)) ([ede37e9](https://github.com/alfa-laboratory/arui-presets/commit/ede37e9)), closes [#93](https://github.com/alfa-laboratory/arui-presets/issues/93)
+* **package:** update css-loader to version 0.28.9 ([#92](https://github.com/alfa-laboratory/arui-presets/issues/92)) ([13b301e](https://github.com/alfa-laboratory/arui-presets/commit/13b301e))
+* **package:** update eslint to version 4.17.0 ([#113](https://github.com/alfa-laboratory/arui-presets/issues/113)) ([cf96bce](https://github.com/alfa-laboratory/arui-presets/commit/cf96bce)), closes [#95](https://github.com/alfa-laboratory/arui-presets/issues/95)
+* **package:** update eslint-plugin-react to version 7.6.1 ([#115](https://github.com/alfa-laboratory/arui-presets/issues/115)) ([001ff7d](https://github.com/alfa-laboratory/arui-presets/commit/001ff7d)), closes [#99](https://github.com/alfa-laboratory/arui-presets/issues/99)
+* **package:** update react-dev-utils to version 5.0.0 ([#91](https://github.com/alfa-laboratory/arui-presets/issues/91)) ([f0df492](https://github.com/alfa-laboratory/arui-presets/commit/f0df492))
+* **package:** update style-loader to version 0.20.1 ([#116](https://github.com/alfa-laboratory/arui-presets/issues/116)) ([5ff7872](https://github.com/alfa-laboratory/arui-presets/commit/5ff7872)), closes [#100](https://github.com/alfa-laboratory/arui-presets/issues/100)
+* **package:** update tslint-config-airbnb to version 5.6.0 ([#114](https://github.com/alfa-laboratory/arui-presets/issues/114)) ([9716598](https://github.com/alfa-laboratory/arui-presets/commit/9716598)), closes [#98](https://github.com/alfa-laboratory/arui-presets/issues/98)
+* **package:** update webpack to version 3.11.0 ([#109](https://github.com/alfa-laboratory/arui-presets/issues/109)) ([582d376](https://github.com/alfa-laboratory/arui-presets/commit/582d376))
+* **package:** update webpack-dev-server to version 2.11.1 ([#96](https://github.com/alfa-laboratory/arui-presets/issues/96)) ([3c1ee1d](https://github.com/alfa-laboratory/arui-presets/commit/3c1ee1d))
+
+
+
 <a name="4.11.3"></a>
 ## [4.11.3](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.2...v4.11.3) (2018-01-14)
 
