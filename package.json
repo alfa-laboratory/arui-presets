@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "@commitlint/cli": "6.0.2",
-    "@commitlint/config-conventional": "6.0.2",
+    "@commitlint/config-conventional": "6.1.0",
     "autoprefixer": "7.2.5",
     "babel-core": "6.26.0",
     "babel-eslint": "8.2.1",
