@@ -1,3 +1,19 @@
+<a name="4.11.5"></a>
+## [4.11.5](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.4...v4.11.5) (2018-02-12)
+
+
+### Bug Fixes
+
+* **package:** update [@commitlint](https://github.com/commitlint)/cli to version 6.1.0 ([#120](https://github.com/alfa-laboratory/arui-presets/issues/120)) ([9200f69](https://github.com/alfa-laboratory/arui-presets/commit/9200f69)), closes [#104](https://github.com/alfa-laboratory/arui-presets/issues/104)
+* **package:** update [@commitlint](https://github.com/commitlint)/config-conventional to version 6.1.0 ([#119](https://github.com/alfa-laboratory/arui-presets/issues/119)) ([bc3f01c](https://github.com/alfa-laboratory/arui-presets/commit/bc3f01c)), closes [#103](https://github.com/alfa-laboratory/arui-presets/issues/103)
+* **package:** update autoprefixer to version 8.0.0 ([#121](https://github.com/alfa-laboratory/arui-presets/issues/121)) ([0f5452e](https://github.com/alfa-laboratory/arui-presets/commit/0f5452e)), closes [#108](https://github.com/alfa-laboratory/arui-presets/issues/108)
+* **package:** update compression-webpack-plugin to version 1.1.6 ([#118](https://github.com/alfa-laboratory/arui-presets/issues/118)) ([b871821](https://github.com/alfa-laboratory/arui-presets/commit/b871821)), closes [#102](https://github.com/alfa-laboratory/arui-presets/issues/102)
+* **package:** update postcss to version 6.0.17 ([#105](https://github.com/alfa-laboratory/arui-presets/issues/105)) ([790af0a](https://github.com/alfa-laboratory/arui-presets/commit/790af0a))
+* **package:** update postcss-import to version 11.1.0 ([#110](https://github.com/alfa-laboratory/arui-presets/issues/110)) ([59780ed](https://github.com/alfa-laboratory/arui-presets/commit/59780ed))
+* **package:** update postcss-loader to version 2.1.0 ([#106](https://github.com/alfa-laboratory/arui-presets/issues/106)) ([16e626a](https://github.com/alfa-laboratory/arui-presets/commit/16e626a))
+
+
+
 <a name="4.11.4"></a>
 ## [4.11.4](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.3...v4.11.4) (2018-02-12)
 
