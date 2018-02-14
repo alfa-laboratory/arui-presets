@@ -1,3 +1,13 @@
+<a name="4.11.6"></a>
+## [4.11.6](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.5...v4.11.6) (2018-02-14)
+
+
+### Bug Fixes
+
+* **package:** update eslint-plugin-jsdoc to version 3.4.0 ([#123](https://github.com/alfa-laboratory/arui-presets/issues/123)) ([2af9f05](https://github.com/alfa-laboratory/arui-presets/commit/2af9f05))
+
+
+
 <a name="4.11.5"></a>
 ## [4.11.5](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.4...v4.11.5) (2018-02-12)
 
