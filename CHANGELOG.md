@@ -1,3 +1,16 @@
+<a name="4.11.7"></a>
+## [4.11.7](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.6...v4.11.7) (2018-02-16)
+
+
+### Bug Fixes
+
+* **package:** update eslint-plugin-jsdoc to version 3.4.1 ([#126](https://github.com/alfa-laboratory/arui-presets/issues/126)) ([f12a810](https://github.com/alfa-laboratory/arui-presets/commit/f12a810))
+* **package:** update postcss to version 6.0.18 ([#127](https://github.com/alfa-laboratory/arui-presets/issues/127)) ([dc93e73](https://github.com/alfa-laboratory/arui-presets/commit/dc93e73))
+* **package:** update postcss-custom-properties to version 6.3.0 ([#129](https://github.com/alfa-laboratory/arui-presets/issues/129)) ([2728626](https://github.com/alfa-laboratory/arui-presets/commit/2728626))
+* **package:** update style-loader to version 0.20.2 ([#128](https://github.com/alfa-laboratory/arui-presets/issues/128)) ([327d611](https://github.com/alfa-laboratory/arui-presets/commit/327d611))
+
+
+
 <a name="4.11.6"></a>
 ## [4.11.6](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.5...v4.11.6) (2018-02-14)
 
