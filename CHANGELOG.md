@@ -1,3 +1,15 @@
+<a name="4.11.8"></a>
+## [4.11.8](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.7...v4.11.8) (2018-02-17)
+
+
+### Bug Fixes
+
+* **package:** update compression-webpack-plugin to version 1.1.7 ([#133](https://github.com/alfa-laboratory/arui-presets/issues/133)) ([db8f1ca](https://github.com/alfa-laboratory/arui-presets/commit/db8f1ca))
+* **package:** update eslint to version 4.18.0 ([#132](https://github.com/alfa-laboratory/arui-presets/issues/132)) ([c2bdf6c](https://github.com/alfa-laboratory/arui-presets/commit/c2bdf6c))
+* **package:** update postcss-custom-properties to version 7.0.0 ([#134](https://github.com/alfa-laboratory/arui-presets/issues/134)) ([74c1276](https://github.com/alfa-laboratory/arui-presets/commit/74c1276)), closes [#130](https://github.com/alfa-laboratory/arui-presets/issues/130)
+
+
+
 <a name="4.11.7"></a>
 ## [4.11.7](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.6...v4.11.7) (2018-02-16)
 
