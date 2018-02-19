@@ -1,3 +1,14 @@
+<a name="4.11.9"></a>
+## [4.11.9](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.8...v4.11.9) (2018-02-19)
+
+
+### Bug Fixes
+
+* **package:** update postcss to version 6.0.19 ([#135](https://github.com/alfa-laboratory/arui-presets/issues/135)) ([09d70b9](https://github.com/alfa-laboratory/arui-presets/commit/09d70b9))
+* **package:** update stylelint to version 9.0.0 ([#136](https://github.com/alfa-laboratory/arui-presets/issues/136)) ([e20a03f](https://github.com/alfa-laboratory/arui-presets/commit/e20a03f))
+
+
+
 <a name="4.11.8"></a>
 ## [4.11.8](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.7...v4.11.8) (2018-02-17)
 
