@@ -1,3 +1,13 @@
+<a name="4.11.10"></a>
+## [4.11.10](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.9...v4.11.10) (2018-02-19)
+
+
+### Bug Fixes
+
+* **postcss:** switch off preserve option for custom properties ([#137](https://github.com/alfa-laboratory/arui-presets/issues/137)) ([14e928c](https://github.com/alfa-laboratory/arui-presets/commit/14e928c))
+
+
+
 <a name="4.11.9"></a>
 ## [4.11.9](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.8...v4.11.9) (2018-02-19)
 
