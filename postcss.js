@@ -18,7 +18,9 @@ function getConfig(mq, path = []) {
             require('postcss-custom-media')({
                 extensions: mq
             }),
-            require('postcss-custom-properties')(),
+            require('postcss-custom-properties')({
+                preserve: false
+            }),
             require('postcss-strip-units')(),
             require('postcss-calc')(),
             require('postcss-color-function')(),
