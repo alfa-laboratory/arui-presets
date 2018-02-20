@@ -1,3 +1,14 @@
+<a name="4.11.11"></a>
+## [4.11.11](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.10...v4.11.11) (2018-02-20)
+
+
+### Bug Fixes
+
+* **package:** update eslint-plugin-react to version 7.7.0 ([#140](https://github.com/alfa-laboratory/arui-presets/issues/140)) ([81d1f0f](https://github.com/alfa-laboratory/arui-presets/commit/81d1f0f))
+* **package:** update file-loader to version 1.1.7 ([#138](https://github.com/alfa-laboratory/arui-presets/issues/138)) ([39eb1c0](https://github.com/alfa-laboratory/arui-presets/commit/39eb1c0))
+
+
+
 <a name="4.11.10"></a>
 ## [4.11.10](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.9...v4.11.10) (2018-02-19)
 
