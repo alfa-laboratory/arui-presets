@@ -56,7 +56,7 @@
     "postcss-nested": "3.0.0",
     "postcss-omit-import-tilde": "1.0.1",
     "postcss-strip-units": "2.0.1",
-    "postcss-url": "7.3.0",
+    "postcss-url": "7.3.1",
     "react-dev-utils": "5.0.0",
     "style-loader": "0.20.2",
     "stylelint": "9.0.0",
