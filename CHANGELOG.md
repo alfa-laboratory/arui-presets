@@ -1,3 +1,21 @@
+<a name="4.11.12"></a>
+## [4.11.12](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.11...v4.11.12) (2018-02-26)
+
+
+### Bug Fixes
+
+* **package:** update [@commitlint](https://github.com/commitlint)/cli to version 6.1.2 ([#151](https://github.com/alfa-laboratory/arui-presets/issues/151)) ([a7fd004](https://github.com/alfa-laboratory/arui-presets/commit/a7fd004))
+* **package:** update [@commitlint](https://github.com/commitlint)/config-conventional to version 6.1.2 ([#161](https://github.com/alfa-laboratory/arui-presets/issues/161)) ([00299ec](https://github.com/alfa-laboratory/arui-presets/commit/00299ec)), closes [#150](https://github.com/alfa-laboratory/arui-presets/issues/150)
+* **package:** update babel-eslint to version 8.2.2 ([#141](https://github.com/alfa-laboratory/arui-presets/issues/141)) ([72e3c28](https://github.com/alfa-laboratory/arui-presets/commit/72e3c28))
+* **package:** update eslint to version 4.18.1 ([#144](https://github.com/alfa-laboratory/arui-presets/issues/144)) ([be5c29b](https://github.com/alfa-laboratory/arui-presets/commit/be5c29b))
+* **package:** update eslint-plugin-import to version 2.9.0 ([#148](https://github.com/alfa-laboratory/arui-presets/issues/148)) ([0a5afd8](https://github.com/alfa-laboratory/arui-presets/commit/0a5afd8))
+* **package:** update eslint-plugin-jsdoc to version 3.5.0 ([#142](https://github.com/alfa-laboratory/arui-presets/issues/142)) ([cf982ef](https://github.com/alfa-laboratory/arui-presets/commit/cf982ef))
+* **package:** update file-loader to version 1.1.9 ([#159](https://github.com/alfa-laboratory/arui-presets/issues/159)) ([a0284c3](https://github.com/alfa-laboratory/arui-presets/commit/a0284c3)), closes [#143](https://github.com/alfa-laboratory/arui-presets/issues/143)
+* **package:** update stylelint to version 9.1.1 ([#160](https://github.com/alfa-laboratory/arui-presets/issues/160)) ([cd579e1](https://github.com/alfa-laboratory/arui-presets/commit/cd579e1)), closes [#145](https://github.com/alfa-laboratory/arui-presets/issues/145)
+* **package:** update tslint-config-airbnb to version 5.7.0 ([#147](https://github.com/alfa-laboratory/arui-presets/issues/147)) ([444511b](https://github.com/alfa-laboratory/arui-presets/commit/444511b))
+
+
+
 <a name="4.11.11"></a>
 ## [4.11.11](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.10...v4.11.11) (2018-02-20)
 
