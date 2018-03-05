@@ -1,3 +1,13 @@
+<a name="4.11.13"></a>
+## [4.11.13](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.12...v4.11.13) (2018-03-05)
+
+
+### Bug Fixes
+
+* **eslint:** add some rule about jsx-curly-spacing ([#164](https://github.com/alfa-laboratory/arui-presets/issues/164)) ([8a1f7f4](https://github.com/alfa-laboratory/arui-presets/commit/8a1f7f4))
+
+
+
 <a name="4.11.12"></a>
 ## [4.11.12](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.11...v4.11.12) (2018-02-26)
 
