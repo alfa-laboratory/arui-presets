@@ -58,7 +58,7 @@
     "postcss-strip-units": "2.0.1",
     "postcss-url": "7.3.0",
     "react-dev-utils": "5.0.0",
-    "style-loader": "0.20.2",
+    "style-loader": "0.20.3",
     "stylelint": "9.1.1",
     "tslint-config-airbnb": "5.7.0",
     "url-loader": "0.6.2",
