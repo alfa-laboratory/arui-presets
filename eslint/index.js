@@ -42,7 +42,8 @@ module.exports = {
                 'shouldComponentUpdate',
                 'componentWillUpdate',
                 'componentDidUpdate',
-                'componentWillUnmount'
+                'componentWillUnmount',
+                'componentDidCatch'
             ]
         }],
         'chai-friendly/no-unused-expressions': 2,
@@ -101,7 +102,8 @@ module.exports = {
                     { type: 'method', static: false, name: 'shouldComponentUpdate' },
                     { type: 'method', static: false, name: 'componentWillUpdate' },
                     { type: 'method', static: false, name: 'componentDidUpdate' },
-                    { type: 'method', static: false, name: 'componentWillUnmount' }
+                    { type: 'method', static: false, name: 'componentWillUnmount' },
+                    { type: 'method', static: false, name: 'componentDidCatch' }
                 ],
                 rendering: [
                     { type: 'method', static: false, name: 'render' },
