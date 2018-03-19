@@ -1,3 +1,21 @@
+<a name="4.12.0"></a>
+# [4.12.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.14...v4.12.0) (2018-03-19)
+
+
+### Bug Fixes
+
+* **package:** update [@commitlint](https://github.com/commitlint)/cli to version 6.1.3 ([#167](https://github.com/alfa-laboratory/arui-presets/issues/167)) ([20b8b41](https://github.com/alfa-laboratory/arui-presets/commit/20b8b41))
+* **package:** update [@commitlint](https://github.com/commitlint)/config-conventional to version 6.1.3 ([#166](https://github.com/alfa-laboratory/arui-presets/issues/166)) ([65f2197](https://github.com/alfa-laboratory/arui-presets/commit/65f2197))
+* **package:** update autoprefixer to version 8.1.0 ([#169](https://github.com/alfa-laboratory/arui-presets/issues/169)) ([4bc4d8e](https://github.com/alfa-laboratory/arui-presets/commit/4bc4d8e))
+
+
+### Features
+
+* remove webpack-postcss-tools ([#163](https://github.com/alfa-laboratory/arui-presets/issues/163)) ([5d2be97](https://github.com/alfa-laboratory/arui-presets/commit/5d2be97))
+* **eslint:** add componentDidCatch handling in plugins ([#180](https://github.com/alfa-laboratory/arui-presets/issues/180)) ([a1bb2a9](https://github.com/alfa-laboratory/arui-presets/commit/a1bb2a9))
+
+
+
 <a name="4.11.14"></a>
 ## [4.11.14](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.13...v4.11.14) (2018-03-19)
 
