@@ -61,7 +61,7 @@ module.exports = {
         'prefer-arrow-callback': 0,
         'prefer-const': 0,
         'react/jsx-boolean-value': [2, 'always'],
-        'react/jsx-curly-spacing': [2, 'always'],
+        'react/jsx-curly-spacing': [2, { when: 'always', children: true }],
         'react/jsx-filename-extension': [2, { extensions: ['.jsx'] }],
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],

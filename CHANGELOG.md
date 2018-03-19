@@ -1,3 +1,25 @@
+<a name="4.11.14"></a>
+## [4.11.14](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.13...v4.11.14) (2018-03-19)
+
+
+### Bug Fixes
+
+* **package:** update eslint to version 4.19.0 ([#178](https://github.com/alfa-laboratory/arui-presets/issues/178)) ([16350ca](https://github.com/alfa-laboratory/arui-presets/commit/16350ca)), closes [#168](https://github.com/alfa-laboratory/arui-presets/issues/168)
+* **package:** update stylelint to version 9.1.3 ([#179](https://github.com/alfa-laboratory/arui-presets/issues/179)) ([943e0c7](https://github.com/alfa-laboratory/arui-presets/commit/943e0c7)), closes [#175](https://github.com/alfa-laboratory/arui-presets/issues/175)
+* **package:** update tslint-config-airbnb to version 5.8.0 ([#177](https://github.com/alfa-laboratory/arui-presets/issues/177)) ([ade6423](https://github.com/alfa-laboratory/arui-presets/commit/ade6423))
+
+
+
+<a name="4.11.13"></a>
+## [4.11.13](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.12...v4.11.13) (2018-03-05)
+
+
+### Bug Fixes
+
+* **eslint:** add some rule about jsx-curly-spacing ([#164](https://github.com/alfa-laboratory/arui-presets/issues/164)) ([8a1f7f4](https://github.com/alfa-laboratory/arui-presets/commit/8a1f7f4))
+
+
+
 <a name="4.11.12"></a>
 ## [4.11.12](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.11...v4.11.12) (2018-02-26)
 
