@@ -41,7 +41,7 @@
     "file-loader": "1.1.9",
     "find-parent-dir": "0.3.0",
     "optimize-css-assets-webpack-plugin": "3.2.0",
-    "postcss": "6.0.19",
+    "postcss": "6.0.21",
     "postcss-calc": "6.0.1",
     "postcss-color-function": "4.0.1",
     "postcss-custom-media": "6.0.0",
