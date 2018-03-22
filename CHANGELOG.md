@@ -1,3 +1,13 @@
+<a name="4.12.1"></a>
+## [4.12.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.12.0...v4.12.1) (2018-03-22)
+
+
+### Bug Fixes
+
+* **webpack:** use require-resolve to find loaders ([3380bae](https://github.com/alfa-laboratory/arui-presets/commit/3380bae))
+
+
+
 <a name="4.12.0"></a>
 # [4.12.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.14...v4.12.0) (2018-03-19)
 
