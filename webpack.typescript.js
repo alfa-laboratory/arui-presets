@@ -7,8 +7,8 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 use: [
-                    'babel-loader',
-                    'ts-loader'
+                    require.resolve('babel-loader'),
+                    require.resolve('ts-loader')
                 ]
             }
         ]

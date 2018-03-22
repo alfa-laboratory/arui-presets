@@ -11,9 +11,9 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    'style-loader',
-                    'css-loader',
-                    'postcss-loader'
+                    require.resolve('style-loader'),
+                    require.resolve('css-loader'),
+                    require.resolve('postcss-loader')
                 ]
             }
         ]
