@@ -1,3 +1,13 @@
+<a name="4.13.1"></a>
+## [4.13.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.0...v4.13.1) (2018-04-03)
+
+
+### Bug Fixes
+
+* **postcss:** fix resolve option absence condition ([#194](https://github.com/alfa-laboratory/arui-presets/issues/194)) ([9373a75](https://github.com/alfa-laboratory/arui-presets/commit/9373a75))
+
+
+
 <a name="4.13.0"></a>
 # [4.13.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.12.1...v4.13.0) (2018-04-03)
 
