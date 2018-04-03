@@ -1,10 +1,20 @@
 /* eslint global-require: 0 */
-function getConfig(mq, path = []) {
+
+/**
+ * Формирует конфиг для PostCSS.
+ *
+ * @param {Object} mq https://github.com/postcss/postcss-custom-media#extensions
+ * @param {String|Array} path https://github.com/postcss/postcss-import#path
+ * @param {Function} resolve https://github.com/postcss/postcss-import#resolve
+ * @returns {Object} PostCSS конфиг.
+ */
+function getConfig(mq, path = [], resolve) {
     return {
         plugins: [
             require('postcss-omit-import-tilde')(),
             require('postcss-import')({
                 path,
+                resolve,
                 plugins: [
                     require('postcss-discard-comments')()
                 ]

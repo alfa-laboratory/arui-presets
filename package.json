@@ -99,16 +99,16 @@
       "eslint"
     ],
     "{babel,babel-node}.js": [
-      "test:babel"
+      "npm run test:babel"
     ],
     "{tslint.js,tsconfig.json}": [
-      "test:tslint"
+      "npm run test:tslint"
     ],
     "postcss.js": [
-      "test:postcss"
+      "npm run test:postcss"
     ],
     "stylelint/*.js": [
-      "test:stylelint"
+      "npm run test:stylelint"
     ]
   },
   "repository": {
