@@ -1,3 +1,20 @@
+<a name="4.13.0"></a>
+# [4.13.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.12.1...v4.13.0) (2018-04-03)
+
+
+### Bug Fixes
+
+* **package:** update autoprefixer to version 8.2.0 ([#182](https://github.com/alfa-laboratory/arui-presets/issues/182)) ([a901358](https://github.com/alfa-laboratory/arui-presets/commit/a901358))
+* **package:** update postcss to version 6.0.21 ([#192](https://github.com/alfa-laboratory/arui-presets/issues/192)) ([316ff0c](https://github.com/alfa-laboratory/arui-presets/commit/316ff0c)), closes [#176](https://github.com/alfa-laboratory/arui-presets/issues/176)
+* **package:** update stylelint to version 9.2.0 ([#189](https://github.com/alfa-laboratory/arui-presets/issues/189)) ([fc37a14](https://github.com/alfa-laboratory/arui-presets/commit/fc37a14))
+
+
+### Features
+
+* **postcss:** add resolve option ([#190](https://github.com/alfa-laboratory/arui-presets/issues/190)) ([2ad6bc9](https://github.com/alfa-laboratory/arui-presets/commit/2ad6bc9))
+
+
+
 <a name="4.12.1"></a>
 ## [4.12.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.12.0...v4.12.1) (2018-03-22)
 
