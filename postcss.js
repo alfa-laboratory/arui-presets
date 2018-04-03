@@ -14,7 +14,8 @@ function getConfig(mq, path = [], resolve) {
             require('postcss-omit-import-tilde')(),
             require('postcss-import')({
                 path,
-                resolve,
+                // Не создаём ключ если resolve нет во входящих аргументах.
+                ...(resolve && { resolve }),
                 plugins: [
                     require('postcss-discard-comments')()
                 ]
