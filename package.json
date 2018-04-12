@@ -1,13 +1,13 @@
 {
   "name": "arui-presets",
-  "version": "4.12.0",
+  "version": "4.13.2",
   "description": "Config files for arui-apps",
   "author": "Good guys from Alfa Laboratory",
   "license": "MIT",
   "dependencies": {
     "@commitlint/cli": "6.1.3",
     "@commitlint/config-conventional": "6.1.3",
-    "autoprefixer": "8.1.0",
+    "autoprefixer": "8.2.0",
     "babel-core": "6.26.0",
     "babel-eslint": "8.2.2",
     "babel-loader": "7.1.2",
@@ -41,7 +41,7 @@
     "file-loader": "1.1.9",
     "find-parent-dir": "0.3.0",
     "optimize-css-assets-webpack-plugin": "3.2.0",
-    "postcss": "6.0.19",
+    "postcss": "6.0.21",
     "postcss-calc": "6.0.1",
     "postcss-color-function": "4.0.1",
     "postcss-custom-media": "6.0.0",
@@ -57,9 +57,9 @@
     "postcss-omit-import-tilde": "1.0.1",
     "postcss-strip-units": "2.0.1",
     "postcss-url": "7.3.0",
-    "react-dev-utils": "5.0.0",
+    "react-dev-utils": "5.0.1",
     "style-loader": "0.20.2",
-    "stylelint": "9.1.3",
+    "stylelint": "9.2.0",
     "tslint-config-airbnb": "5.8.0",
     "url-loader": "0.6.2",
     "webpack": "3.11.0",
@@ -68,10 +68,10 @@
     "webpack-manifest-plugin": "1.3.2"
   },
   "devDependencies": {
-    "conventional-changelog-cli": "1.3.16",
+    "conventional-changelog-cli": "1.3.21",
     "conventional-github-releaser": "2.0.2",
     "husky": "0.14.3",
-    "lint-staged": "7.0.0",
+    "lint-staged": "7.0.2",
     "npm-run-all": "4.1.2",
     "tslint": "5.9.0",
     "typescript": "2.6.2"
@@ -99,16 +99,16 @@
       "eslint"
     ],
     "{babel,babel-node}.js": [
-      "test:babel"
+      "npm run test:babel"
     ],
     "{tslint.js,tsconfig.json}": [
-      "test:tslint"
+      "npm run test:tslint"
     ],
     "postcss.js": [
-      "test:postcss"
+      "npm run test:postcss"
     ],
     "stylelint/*.js": [
-      "test:stylelint"
+      "npm run test:stylelint"
     ]
   },
   "repository": {

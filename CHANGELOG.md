@@ -1,3 +1,50 @@
+<a name="4.13.2"></a>
+## [4.13.2](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.1...v4.13.2) (2018-04-10)
+
+
+### Bug Fixes
+
+* **postcss:** fix config for node < 8 ([#198](https://github.com/alfa-laboratory/arui-presets/issues/198)) ([81ab2af](https://github.com/alfa-laboratory/arui-presets/commit/81ab2af))
+
+
+
+<a name="4.13.1"></a>
+## [4.13.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.0...v4.13.1) (2018-04-03)
+
+
+### Bug Fixes
+
+* **postcss:** fix resolve option absence condition ([#194](https://github.com/alfa-laboratory/arui-presets/issues/194)) ([9373a75](https://github.com/alfa-laboratory/arui-presets/commit/9373a75))
+
+
+
+<a name="4.13.0"></a>
+# [4.13.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.12.1...v4.13.0) (2018-04-03)
+
+
+### Bug Fixes
+
+* **package:** update autoprefixer to version 8.2.0 ([#182](https://github.com/alfa-laboratory/arui-presets/issues/182)) ([a901358](https://github.com/alfa-laboratory/arui-presets/commit/a901358))
+* **package:** update postcss to version 6.0.21 ([#192](https://github.com/alfa-laboratory/arui-presets/issues/192)) ([316ff0c](https://github.com/alfa-laboratory/arui-presets/commit/316ff0c)), closes [#176](https://github.com/alfa-laboratory/arui-presets/issues/176)
+* **package:** update stylelint to version 9.2.0 ([#189](https://github.com/alfa-laboratory/arui-presets/issues/189)) ([fc37a14](https://github.com/alfa-laboratory/arui-presets/commit/fc37a14))
+
+
+### Features
+
+* **postcss:** add resolve option ([#190](https://github.com/alfa-laboratory/arui-presets/issues/190)) ([2ad6bc9](https://github.com/alfa-laboratory/arui-presets/commit/2ad6bc9))
+
+
+
+<a name="4.12.1"></a>
+## [4.12.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.12.0...v4.12.1) (2018-03-22)
+
+
+### Bug Fixes
+
+* **webpack:** use require-resolve to find loaders ([3380bae](https://github.com/alfa-laboratory/arui-presets/commit/3380bae))
+
+
+
 <a name="4.12.0"></a>
 # [4.12.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.11.14...v4.12.0) (2018-03-19)
 

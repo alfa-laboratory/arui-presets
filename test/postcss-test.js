@@ -1,3 +1,5 @@
+/* eslint no-console: 0 */
+
 const postcss = require('postcss');
 const fs = require('fs');
 const path = require('path');
@@ -11,5 +13,12 @@ const mqConfig = {
 
 postcss(postcssConfig(mqConfig))
     .process(cssFile)
-    // eslint-disable-next-line no-console
+    .then(result => console.log(result.css));
+
+postcss(postcssConfig(mqConfig, []))
+    .process(cssFile)
+    .then(result => console.log(result.css));
+
+postcss(postcssConfig(mqConfig, [], id => id))
+    .process(cssFile)
     .then(result => console.log(result.css));

@@ -9,8 +9,8 @@ function webpackProductionConfigBuilder(options) {
     const extractMainCSS = new ExtractTextPlugin(options.extractMainCSS || '[name].[hash].css');
     const extractIconsCSS = new ExtractTextPlugin(options.extractIconsCSS || '[name]-icons.[hash].css');
     const extractOptions = Object.assign({
-        fallback: 'style-loader',
-        use: ['css-loader', 'postcss-loader']
+        fallback: require.resolve('style-loader'),
+        use: [require.resolve('css-loader'), require.resolve('postcss-loader')]
     }, options.extractOptions);
 
     return {
