@@ -1,3 +1,13 @@
+<a name="4.13.2"></a>
+## [4.13.2](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.1...v4.13.2) (2018-04-10)
+
+
+### Bug Fixes
+
+* **postcss:** fix config for node < 8 ([#198](https://github.com/alfa-laboratory/arui-presets/issues/198)) ([81ab2af](https://github.com/alfa-laboratory/arui-presets/commit/81ab2af))
+
+
+
 <a name="4.13.1"></a>
 ## [4.13.1](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.0...v4.13.1) (2018-04-03)
 
