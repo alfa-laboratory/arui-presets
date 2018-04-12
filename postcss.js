@@ -12,14 +12,16 @@ function getConfig(mq, path = [], resolve) {
     return {
         plugins: [
             require('postcss-omit-import-tilde')(),
-            require('postcss-import')({
-                path,
-                // Не создаём ключ если resolve нет во входящих аргументах.
-                ...(resolve && { resolve }),
-                plugins: [
-                    require('postcss-discard-comments')()
-                ]
-            }),
+            require('postcss-import')(
+                // Используем Object.assign чтобы не создавать ключ если resolve нет во входящих аргументах.
+                // NB: Object spread здесь не доступен пока есть поддержка Node < 8.3.0.
+                Object.assign({
+                    path,
+                    plugins: [
+                        require('postcss-discard-comments')()
+                    ]
+                }, resolve && { resolve })
+            ),
             require('postcss-url')({
                 url: 'rebase'
             }),
