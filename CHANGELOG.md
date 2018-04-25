@@ -1,3 +1,17 @@
+<a name="4.13.3"></a>
+## [4.13.3](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.2...v4.13.3) (2018-04-25)
+
+
+### Bug Fixes
+
+* **package:** update babel-eslint to version 8.2.3 ([672da46](https://github.com/alfa-laboratory/arui-presets/commit/672da46))
+* **package:** update eslint to version 4.19.1 ([#183](https://github.com/alfa-laboratory/arui-presets/issues/183)) ([013a730](https://github.com/alfa-laboratory/arui-presets/commit/013a730))
+* **package:** update eslint-plugin-import to version 2.11.0 ([#199](https://github.com/alfa-laboratory/arui-presets/issues/199)) ([7675d69](https://github.com/alfa-laboratory/arui-presets/commit/7675d69)), closes [#187](https://github.com/alfa-laboratory/arui-presets/issues/187)
+* **package:** update eslint-plugin-jsdoc to version 3.6.2 ([#201](https://github.com/alfa-laboratory/arui-presets/issues/201)) ([3529ea7](https://github.com/alfa-laboratory/arui-presets/commit/3529ea7)), closes [#197](https://github.com/alfa-laboratory/arui-presets/issues/197)
+* **package:** update react-dev-utils to version 5.0.1 ([#196](https://github.com/alfa-laboratory/arui-presets/issues/196)) ([5eab895](https://github.com/alfa-laboratory/arui-presets/commit/5eab895))
+
+
+
 <a name="4.13.2"></a>
 ## [4.13.2](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.1...v4.13.2) (2018-04-10)
 
