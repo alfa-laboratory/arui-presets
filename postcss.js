@@ -6,10 +6,10 @@
  * @param {Object} mq https://github.com/postcss/postcss-custom-media#extensions
  * @param {String|Array} path https://github.com/postcss/postcss-import#path
  * @param {Function} resolve https://github.com/postcss/postcss-import#resolve
- * @param {Object} vars https://github.com/postcss/postcss-custom-properties#variables
+ * @param {Object} variables https://github.com/postcss/postcss-custom-properties#variables
  * @returns {Object} PostCSS конфиг.
  */
-function getConfig(mq, path = [], resolve, vars = {}) {
+function getConfig(mq, path = [], resolve, variables = {}) {
     return {
         plugins: [
             require('postcss-omit-import-tilde')(),
@@ -32,10 +32,12 @@ function getConfig(mq, path = [], resolve, vars = {}) {
             require('postcss-custom-media')({
                 extensions: mq
             }),
-            require('postcss-custom-properties')({
-                preserve: false,
-                variables: vars
-            }),
+            require('postcss-custom-properties')(
+                Object.assign({
+                    variables,
+                    preserve: false
+                })
+            ),
             require('postcss-strip-units')(),
             require('postcss-calc')(),
             require('postcss-color-function')(),
