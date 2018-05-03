@@ -6,6 +6,7 @@
  * @param {Object} mq https://github.com/postcss/postcss-custom-media#extensions
  * @param {String|Array} path https://github.com/postcss/postcss-import#path
  * @param {Function} resolve https://github.com/postcss/postcss-import#resolve
+ * @param {Object} variables https://github.com/postcss/postcss-custom-properties#variables
  * @returns {Object} PostCSS конфиг.
  */
 function getConfig(mq, path = [], resolve, vars = {}) {
