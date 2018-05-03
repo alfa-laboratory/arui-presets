@@ -8,7 +8,7 @@
  * @param {Function} resolve https://github.com/postcss/postcss-import#resolve
  * @returns {Object} PostCSS конфиг.
  */
-function getConfig(mq, path = [], resolve) {
+function getConfig(mq, path = [], resolve, vars = {}) {
     return {
         plugins: [
             require('postcss-omit-import-tilde')(),
@@ -32,7 +32,8 @@ function getConfig(mq, path = [], resolve) {
                 extensions: mq
             }),
             require('postcss-custom-properties')({
-                preserve: false
+                preserve: false,
+                variables: vars
             }),
             require('postcss-strip-units')(),
             require('postcss-calc')(),
