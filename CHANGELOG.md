@@ -1,3 +1,13 @@
+<a name="4.13.4"></a>
+## [4.13.4](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.3...v4.13.4) (2018-06-04)
+
+
+### Bug Fixes
+
+* **package:** update eslint-plugin-sort-class-members to version 1.3.1 ([5997063](https://github.com/alfa-laboratory/arui-presets/commit/5997063))
+
+
+
 <a name="4.13.3"></a>
 ## [4.13.3](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.2...v4.13.3) (2018-04-25)
 
