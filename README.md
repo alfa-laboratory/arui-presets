@@ -50,6 +50,14 @@ module.exports = {
 
 #### eslint
 Вы можете унаследовать конфигурацию вашего eslint от `arui-presets/eslint`.
+К сожалению, разработчики eslint [очень нехотят](https://github.com/eslint/eslint/issues/3458) делать полноценную систему для общих конфигураций, так что вам 
+необходимо так же установить `peerDependencies`.
+
+```
+npm install eslint eslint-config-airbnb eslint-plugin-class-methods-use-this-regexp \
+  eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-jsx-a11y eslint-plugin-react \
+  eslint-plugin-sort-class-members eslint-plugin-chai-friendly --save-dev
+```
 
 
 Файл `.eslintrc.js` вашего проекта:
@@ -139,19 +147,7 @@ module.exports = merge.smart(
 
 Использование в typescript проектах
 -----------------------------------
-
-#### Конфигурация tslint
-Вы можете унаследовать конфигурацию вашего tslint от `arui-presets/tslint`.
-```json
-{
-    "extends": "arui-presets/tslint"
-}
-```
-
-Использование в package.json вашего проекта
-```
-"lint-ts": "tslint -c tslint.json --project ./tsconfig.json --type-check src/**/*.ts"
-```
+Для использования в проекте ts используйте пакет [arui-presets-ts](https://github.com/alfa-laboratory/arui-presets-ts).
 
 Лицензия
 --------
