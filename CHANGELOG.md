@@ -1,3 +1,14 @@
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.4...v5.0.0) (2018-06-08)
+
+
+### Features
+
+* **eslint:** mark eslint plugins as peer dependencies ([d7ee97e](https://github.com/alfa-laboratory/arui-presets/commit/d7ee97e))
+* **tslint:** remove tslint from this project ([b973990](https://github.com/alfa-laboratory/arui-presets/commit/b973990))
+
+
+
 <a name="4.13.4"></a>
 ## [4.13.4](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.3...v4.13.4) (2018-06-04)
 
