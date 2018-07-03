@@ -1,3 +1,14 @@
+<a name="5.0.1"></a>
+## [5.0.1](https://github.com/alfa-laboratory/arui-presets/compare/v5.0.0...v5.0.1) (2018-07-03)
+
+
+### Bug Fixes
+
+* browserslist config ([a0b2b76](https://github.com/alfa-laboratory/arui-presets/commit/a0b2b76))
+* use shared browserlist config for all tools ([d8515f8](https://github.com/alfa-laboratory/arui-presets/commit/d8515f8))
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/alfa-laboratory/arui-presets/compare/v4.13.4...v5.0.0) (2018-06-08)
 
