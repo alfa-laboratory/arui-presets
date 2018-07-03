@@ -38,9 +38,7 @@ function getConfig(mq, path = [], resolve) {
             require('postcss-calc')(),
             require('postcss-color-function')(),
             require('postcss-nested')(),
-            require('autoprefixer')({
-                browsers: require('./supporting-browsers')
-            }),
+            require('autoprefixer')(),
             require('postcss-inherit')
         ]
     };

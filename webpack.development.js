@@ -1,8 +1,9 @@
+process.env.BROWSERSLIST_CONFIG = process.env.BROWSERSLIST_CONFIG || require.resolve('./.browserslistrc');
+
 const webpack = require('webpack');
 const path = require('path');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
-
 
 module.exports = {
     devtool: 'inline-eval-source-map',
