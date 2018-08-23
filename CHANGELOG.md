@@ -1,3 +1,8 @@
+<a name="5.0.2"></a>
+## [5.0.2](https://github.com/alfa-laboratory/arui-presets/compare/v5.0.1...v5.0.2) (2018-08-23)
+
+
+
 <a name="5.0.1"></a>
 ## [5.0.1](https://github.com/alfa-laboratory/arui-presets/compare/v5.0.0...v5.0.1) (2018-07-03)
 
