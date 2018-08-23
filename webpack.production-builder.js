@@ -47,7 +47,13 @@ function webpackProductionConfigBuilder(options) {
             }),
             extractMainCSS,
             extractIconsCSS,
-            new OptimizeCssAssetsPlugin(),
+            new OptimizeCssAssetsPlugin({
+                cssProcessorOptions: {
+                    reduceIdents: {
+                        keyframes: false
+                    }
+                }
+            }),
             new CompressionPlugin({
                 asset: '[file].gz',
                 algorithm: 'gzip',
