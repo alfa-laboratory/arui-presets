@@ -12,7 +12,10 @@ function webpackProductionConfigBuilder(options) {
     const extractIconsCSS = new ExtractTextPlugin(options.extractIconsCSS || '[name]-icons.[hash].css');
     const extractOptions = Object.assign({
         fallback: require.resolve('style-loader'),
-        use: [require.resolve('css-loader'), require.resolve('postcss-loader')]
+        use: [
+            { loader: 'css-loader', options: { minimize: true } },
+            require.resolve('postcss-loader')
+        ]
     }, options.extractOptions);
 
     return {
