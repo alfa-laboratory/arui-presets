@@ -43,7 +43,7 @@ yarn add arui-presets --dev
 Файл `commitlint.config.js` вашего проекта:
 ```js
 module.exports = {
-    extends: ['arui-presets/commitlint']
+    extends: ['./node_modules/arui-presets/commitlint']
 };
 ```
 
