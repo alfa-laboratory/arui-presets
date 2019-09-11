@@ -16,31 +16,46 @@ function buildPresets(context, options) {
     return {
         presets: [
             [
-                'env',
+                '@babel/preset-env',
                 Object.assign({}, defaultOptions, options)
             ],
-            'react'
-        ],
+            '@babel/preset-react'],
         plugins: [
-            'syntax-dynamic-import',
-            'transform-proto-to-assign',
-            'transform-decorators-legacy',
-            'transform-class-properties',
-            'transform-export-extensions',
-            ['transform-object-rest-spread', { useBuiltIns: true }],
-            ['transform-runtime', { polyfill: false, helpers: false }]
+            '@babel/plugin-syntax-dynamic-import',
+            '@babel/plugin-transform-proto-to-assign',
+            [
+                '@babel/plugin-proposal-decorators',
+                {
+                    legacy: true
+                }
+            ],
+            '@babel/plugin-proposal-class-properties',
+            '@babel/plugin-proposal-export-default-from',
+            '@babel/plugin-proposal-export-namespace-from',
+            [
+                '@babel/plugin-proposal-object-rest-spread',
+                {
+                    useBuiltIns: true
+                }
+            ],
+            [
+                '@babel/plugin-transform-runtime',
+                {
+                    corejs: 2,
+                    helpers: false
+                }
+            ]
         ],
         env: {
             production: {
                 plugins: [
                     'transform-react-remove-prop-types',
-                    'transform-react-constant-elements',
-                    'transform-react-inline-elements'
+                    '@babel/plugin-transform-react-constant-elements',
+                    '@babel/plugin-transform-react-inline-elements'
                 ]
             }
         }
     };
 }
-
 
 module.exports = buildPresets;
