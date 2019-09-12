@@ -1,3 +1,18 @@
+<a name="5.1.0"></a>
+# [5.1.0](https://github.com/alfa-laboratory/arui-presets/compare/v5.0.2...v5.1.0) (2019-09-12)
+
+
+### Bug Fixes
+
+* get linting configs from other package ([57d44f8](https://github.com/alfa-laboratory/arui-presets/commit/57d44f8))
+
+
+### Features
+
+* **babel:** update babel to version 7 ([d4d9f17](https://github.com/alfa-laboratory/arui-presets/commit/d4d9f17))
+
+
+
 <a name="5.0.2"></a>
 ## [5.0.2](https://github.com/alfa-laboratory/arui-presets/compare/v5.0.1...v5.0.2) (2018-08-23)
 
