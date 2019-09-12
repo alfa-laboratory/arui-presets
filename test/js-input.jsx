@@ -1,4 +1,4 @@
-import babelCore from 'babel-core';
+import babelCore from '@babel/core';
 
 class AnswersGiver {
     question = 'The answer to the ultimate question of life, the universe and everything is';
