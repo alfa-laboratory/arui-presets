@@ -1,6 +1,6 @@
+const path = require('path');
+
+
 module.exports = {
-    extends: ['@commitlint/config-conventional'],
-    rules: {
-        'scope-empty': [2, 'never']
-    }
+    extends: [path.relative(__dirname, require.resolve('arui-presets-lint/commitlint'))]
 };
