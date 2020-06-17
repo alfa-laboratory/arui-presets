@@ -1,3 +1,4 @@
+# DEPRECATED (use https://github.com/alfa-laboratory/arui-presets-lint)
 Alfa Laboratory UI Presets
 ==========================
 
